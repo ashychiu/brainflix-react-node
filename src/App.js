@@ -1,11 +1,10 @@
 import "./styles/partials/_globals.scss";
-
-import HeaderLogo from "./components/HeaderLogo/HeaderLogo";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <div className="App">
-      <HeaderLogo />
+      <Header />
     </div>
   );
 }

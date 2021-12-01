@@ -1,5 +1,8 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
 .header {
   &__logo {
-    // width: 00px;
+    margin-bottom: 16px;
   }
 }

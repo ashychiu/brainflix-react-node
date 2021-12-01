@@ -18,62 +18,52 @@
 @mixin page-header {
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 600;
+  font-weight: 700;
 }
 @mixin section-header {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
 }
 @mixin subheader {
-  font-size: 0.875rem;
-  line-height: 1.375rem;
-  font-weight: 600;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
 }
 @mixin body-copy {
   font-size: 0.8125rem;
   line-height: 1.125rem;
   font-weight: 400;
 }
-@mixin footer-copy {
-  font-size: 0.8125rem;
-  line-height: 1.125rem;
-  font-weight: 400;
-}
 @mixin label-button {
-  font-size: 0.625rem;
+  font-size: 12px;
   line-height: 1.25rem;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 // Tablet/Desktop - Font size, line height & font weight
 @mixin tablet-page-header {
-  font-size: 3.75rem;
-  line-height: 4.25rem;
-  font-weight: 600;
+  font-size: 33px;
+  line-height: 44px;
+  font-weight: 700;
 }
 @mixin tablet-section-header {
-  font-size: 2.25rem;
-  line-height: 2.75rem;
-  font-weight: 600;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
 }
 @mixin tablet-subheader {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 600;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 700;
 }
 @mixin tablet-body-copy {
   font-size: 0.875rem;
   line-height: 1.375rem;
   font-weight: 400;
 }
-@mixin tablet-footer-copy {
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  font-weight: 400;
-}
 @mixin tablet-label-button {
   font-size: 0.75rem;
   line-height: 1.25rem;
-  font-weight: 600;
+  font-weight: 700;
 }

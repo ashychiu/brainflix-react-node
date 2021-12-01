@@ -1,0 +1,18 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header {
+  &__container {
+    width: 100%;
+    padding: $padding;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__search-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
