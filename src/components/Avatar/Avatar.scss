@@ -1,0 +1,30 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.header__avatar {
+  &-mobile {
+    align-content: center;
+    margin-left: 16px;
+    width: 2.25rem;
+    height: 2.25rem;
+    object-fit: cover;
+    border-radius: 50%;
+    @include tablet {
+      display: none;
+    }
+  }
+  &-tab-desk {
+    display: none;
+    @include tablet {
+      display: inline-block;
+      margin: 0 24px 0 18px;
+      width: 2.25rem;
+      height: 2.25rem;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    @include desktop {
+      margin-right: 10%;
+    }
+  }
+}
