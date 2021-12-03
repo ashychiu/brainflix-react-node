@@ -1,19 +1,20 @@
 import React, { Component } from "react";
 import "./styles/partials/_globals.scss";
 import videosList from "./data/videos.json";
-import videoDetails from "./data/video-details.json";
+import videoData from "./data/video-details.json";
 import Header from "./components/Header/Header";
 import VideoNav from "./components/VideoNav/VideoNav";
+import VideoDetails from "./components/VideoDetails/VideoDetails";
 
 class App extends Component {
   state = {
     videos: videosList,
-    selectedVideo: videoDetails[0],
+    selectedVideo: videoData[0],
   };
 
   handleVideoSelect = (id) => {
     this.setState({
-      selectedVideo: videoDetails.find((video) => video.id === id),
+      selectedVideo: videoData.find((video) => video.id === id),
     });
   };
 
@@ -25,7 +26,9 @@ class App extends Component {
     return (
       <div className="Brainflix">
         <Header />
+        <VideoDetails selectedVideo={this.state.selectedVideo} />
         <VideoNav videos={nextVideos} onVideoSelect={this.handleVideoSelect} />
+        {console.log(videoData)}
       </div>
     );
   }
