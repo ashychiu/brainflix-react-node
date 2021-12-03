@@ -1,0 +1,43 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.nextvideo {
+  &__section-title {
+    color: $primary-silver;
+    font-size: 14px;
+    font-weight: 600;
+    margin-left: 16px;
+  }
+  &__image {
+    width: 100px;
+    height: 80px;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 16px;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+  &__item {
+    padding: $padding;
+    // width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__title {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  &__channel {
+    font-weight: 400;
+    margin: 0;
+  }
+}
