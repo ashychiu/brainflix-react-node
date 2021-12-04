@@ -2,9 +2,12 @@
 @use "../../styles/partials/mixins" as *;
 
 .video-details {
+  &__container {
+    padding: $padding;
+  }
   &__image {
     width: 100%;
-    height: 80vh;
+    height: 50vh;
     object-fit: cover;
   }
 }

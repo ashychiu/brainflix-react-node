@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./styles/partials/_globals.scss";
+import "./App.scss";
 import videosList from "./data/videos.json";
 import videoData from "./data/video-details.json";
 import Header from "./components/Header/Header";

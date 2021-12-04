@@ -5,6 +5,7 @@ const VideoItem = (props) => {
     e.preventDefault();
     props.onVideoSelect(props.id);
   };
+
   return (
     <article className="nextvideo__item" onClick={handleVideoSelect}>
       <img className="nextvideo__image" src={props.image} alt={props.title} />
