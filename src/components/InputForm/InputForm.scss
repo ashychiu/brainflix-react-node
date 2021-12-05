@@ -1,7 +1,7 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
 
-.header__searchbar input {
+.header__searchbar {
   color: $primary-black;
   font-family: "Avenir", Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;

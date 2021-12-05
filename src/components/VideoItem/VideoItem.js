@@ -12,11 +12,11 @@ const VideoItem = (props) => {
   };
 
   return (
-    <article className="nextvideo__item" onClick={handleVideoSelect}>
-      <img className="nextvideo__image" src={props.image} alt={props.title} />
-      <div className="nextvideo__container">
-        <p className="nextvideo__title">{props.title}</p>
-        <p className="nextvideo__channel">{props.channel}</p>
+    <article className="video-item" onClick={handleVideoSelect}>
+      <img className="video-item__thumb" src={props.image} alt={props.title} />
+      <div className="video-item__container">
+        <p className="video-item__title">{props.title}</p>
+        <p className="video-item__channel">{props.channel}</p>
       </div>
     </article>
   );

@@ -1,2 +1,15 @@
 @use "../../styles/partials/variables" as *;
 @use "../../styles/partials/mixins" as *;
+
+.video-nav {
+  &__list {
+    padding: $padding;
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    color: $primary-silver;
+    font-size: 14px;
+    font-weight: 550;
+  }
+}

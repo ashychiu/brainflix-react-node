@@ -24,7 +24,7 @@ class App extends Component {
     );
 
     return (
-      <div className="Brainflix">
+      <div className="brainflix">
         <Header />
         <VideoDetails selectedVideo={this.state.selectedVideo} />
         <VideoNav videos={nextVideos} onVideoSelect={this.handleVideoSelect} />

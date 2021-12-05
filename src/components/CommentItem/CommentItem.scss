@@ -1,0 +1,29 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.comment-item {
+  display: flex;
+  padding: 0;
+  &__main-container {
+    display: flex;
+    flex-direction: column;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__name {
+    @include body-copy;
+    font-weight: 600;
+  }
+  &__date {
+    @include body-copy;
+    color: $primary-silver;
+  }
+  &__content {
+    @include body-copy;
+    margin: 0;
+    padding-bottom: 5px;
+  }
+}

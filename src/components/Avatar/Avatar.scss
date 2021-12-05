@@ -40,3 +40,9 @@
     margin-top: 24px;
   }
 }
+
+.comment-item__avatar {
+  @extend .comment-form__avatar;
+  margin-top: 16px;
+  margin-right: 16px;
+}

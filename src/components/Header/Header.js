@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../../assets/logo/BrainFlix-logo.svg";
 import Avatar from "../Avatar/Avatar";
+import mohan from "../../assets/images/Mohan-muruge.jpg";
 import "./Header.scss";
 import Button from "../Button/Button";
 import InputForm from "../InputForm/InputForm";
@@ -16,10 +17,10 @@ const Header = () => {
             type="search"
             placeholder="Search"
           />
-          <Avatar className="header__avatar-mobile" />
+          <Avatar className="header__avatar-mobile" src={mohan} />
         </div>
         <Button id="uploadButton" placeholder="UPLOAD" />
-        <Avatar className="header__avatar-tab-desk" />
+        <Avatar className="header__avatar-tab-desk" src={mohan} />
       </div>
     </header>
   );

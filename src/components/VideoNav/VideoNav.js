@@ -3,8 +3,8 @@ import "./VideoNav.scss";
 
 const VideoNav = (props) => {
   return (
-    <section className="nextvideo__list">
-      <h2 className="nextvideo__section-title">NEXT VIDEOS</h2>
+    <section className="video-nav__list">
+      <h2 className="video-nav__heading">NEXT VIDEOS</h2>
       {props.videos.map((video) => {
         return (
           <VideoItem
