@@ -8,7 +8,7 @@ const VideoItem = (props) => {
   const handleVideoSelect = (e) => {
     e.preventDefault();
     props.onVideoSelect(props.id);
-    scrollToTop(); //scroll up the selected video when onclick
+    // scrollToTop(); //scroll up the selected video when onclick
   };
 
   return (

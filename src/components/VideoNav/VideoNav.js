@@ -22,20 +22,3 @@ const VideoNav = (props) => {
 };
 
 export default VideoNav;
-
-// class VideoNav extends Component {
-//   state = {
-//     videos: videosList,
-//   };
-
-//   render() {
-//     console.log(this.state.videos);
-//     return (
-//       <div>
-//         <VideoItem videos={this.state.videos} />
-//       </div>
-//     );
-//   }
-// }
-
-// export default VideoNav;

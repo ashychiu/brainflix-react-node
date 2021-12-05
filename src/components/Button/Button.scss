@@ -32,3 +32,25 @@
     background-color: $secondary-darkblue;
   }
 }
+
+#submitButton {
+  @extend #uploadButton;
+  background-image: url("../../assets/icons/add_comment.svg");
+  width: 100%;
+  height: 36px;
+  margin-top: 10px;
+  @include subheader;
+  font-weight: 400;
+  @include tablet {
+    width: 25%;
+    height: 40px;
+    margin: 0 0 0 16px;
+  }
+  @include desktop {
+    width: 12%;
+  }
+  //hover effect on button
+  &:hover {
+    background-color: $secondary-darkblue;
+  }
+}

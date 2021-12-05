@@ -1,0 +1,65 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.comment-form {
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    @include tablet {
+      justify-content: center;
+    }
+  }
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      flex-grow: 2;
+      flex-direction: row;
+      align-items: flex-end;
+    }
+  }
+  &__input-container-tab-desk {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+  }
+  label {
+    color: $primary-silver;
+    @include label-button;
+  }
+  &__avatar {
+    margin-right: 10px;
+    padding: 0;
+  }
+  textarea {
+    background-repeat: no-repeat;
+    color: $primary-black;
+    font-family: "Avenir", Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid $secondary-mercury;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    outline: none;
+    background-color: $secondary-alabaster;
+    @include tablet {
+      display: none;
+    }
+    &:focus {
+      border: 1px solid $primary-black;
+    }
+    &:default {
+      border: 1px solid $secondary-alabaster;
+    }
+    &::placeholder {
+      @include label-button;
+      font-family: "Avenir", Verdana, Geneva, Tahoma, sans-serif;
+      color: $primary-black;
+      @include tablet {
+        font-size: 1.1em;
+      }
+    }
+  }
+}

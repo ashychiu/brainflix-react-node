@@ -1,0 +1,9 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.comment-section {
+  &__num-of {
+    @include body-copy;
+    font-weight: 600;
+  }
+}

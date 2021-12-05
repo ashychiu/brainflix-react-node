@@ -1,16 +1,16 @@
 import CommentItem from "../CommentItem/CommentItem";
-import Button from "../Button/Button";
+import CommentForm from "../CommentForm/CommentForm";
 import "./CommentSection.scss";
 import { v4 as uid } from "uuid";
 
 const CommentSection = (props) => {
   return (
     <>
-      <h3>Join the conversation</h3>
-
       <section className="comment-section">
-        {props.comments.length} comments
-        <Button />
+        <p className="comment-section__num-of">
+          {props.comments.length} Comments
+        </p>
+        <CommentForm />
         {props.comments.map((comment, uid) => {
           return (
             <CommentItem
