@@ -24,3 +24,13 @@ a {
 hr {
   border: 1px solid $secondary-mercury;
 }
+
+.brainflix {
+  &__container-desktop {
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+      margin: 0 120px;
+    }
+  }
+}

@@ -5,6 +5,7 @@ import videoData from "./data/video-details.json";
 import Header from "./components/Header/Header";
 import VideoNav from "./components/VideoNav/VideoNav";
 import VideoDetails from "./components/VideoDetails/VideoDetails";
+import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
 
 class App extends Component {
   state = {
@@ -26,8 +27,14 @@ class App extends Component {
     return (
       <div className="brainflix">
         <Header />
-        <VideoDetails selectedVideo={this.state.selectedVideo} />
-        <VideoNav videos={nextVideos} onVideoSelect={this.handleVideoSelect} />
+        <VideoPlayer selectedVideo={this.state.selectedVideo} />
+        <div className="brainflix__container-desktop">
+          <VideoDetails selectedVideo={this.state.selectedVideo} />
+          <VideoNav
+            videos={nextVideos}
+            onVideoSelect={this.handleVideoSelect}
+          />
+        </div>
       </div>
     );
   }

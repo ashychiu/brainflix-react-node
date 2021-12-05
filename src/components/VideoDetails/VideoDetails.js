@@ -18,17 +18,16 @@ const VideoDetails = (props) => {
 
   return (
     <section className="video-details">
-      <video className="video-details__video" controls poster={image}></video>
-      {/* <img className="video-details__image" src={image} alt={title} /> */}
       <div className="video-details__container">
         <h2 className="video-details__title">{title}</h2>
         <hr className="video-details__divider-mobile" />
+        {/* separate container for video info */}
         <div className="video-info__outter-container">
-          <div className="video-info__container">
+          <div className="video-info__left-container">
             <h3 className="video-info__channel">By {channel}</h3>
             <p className="video-info__date">{formatDate(timestamp)}</p>
           </div>
-          <div className="video-info__container">
+          <div className="video-info__right-container">
             <p className="video-info__likes-num">
               <img className="video-info__like-icon" src={likeIcon} />
               {likes}

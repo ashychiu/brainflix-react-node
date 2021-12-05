@@ -4,6 +4,7 @@
 .video-item {
   display: flex;
   flex-direction: row;
+  margin-bottom: 16px;
 
   &__thumb {
     width: 120px;
@@ -22,11 +23,17 @@
     @include body-copy;
     font-weight: 600;
     margin-bottom: 10px;
+    @include desktop {
+      margin: 0;
+    }
   }
   &__channel {
     @include body-copy;
     font-weight: 400;
     margin: 0;
     margin-bottom: 10px;
+    @include desktop {
+      margin-top: 5px;
+    }
   }
 }

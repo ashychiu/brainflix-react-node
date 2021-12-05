@@ -9,12 +9,33 @@
     padding: $padding;
     display: flex;
     flex-direction: column;
+    @include tablet {
+      padding: 16px 36px 0px 36px;
+    }
+    @include desktop {
+      padding-right: 0;
+    }
   }
   &__title {
     @include page-header;
+    @include tablet {
+      @include tablet-page-header;
+      margin-bottom: 5px;
+    }
   }
   &__description {
     @include body-copy;
+    @include tablet {
+      @include tablet-body-copy;
+    }
+    @include desktop {
+      padding-right: 24px;
+    }
+  }
+  &__divider-mobile {
+    @include tablet {
+      display: none;
+    }
   }
 }
 
@@ -26,20 +47,48 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include tablet {
+      padding: 0;
+    }
   }
-  &__container {
+  &__left-container {
     padding: 0;
     margin: 0;
+    @include tablet {
+      width: 50%;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+  &__right-container {
+    @extend .video-info__left-container;
+    @include tablet {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+    @include desktop {
+      padding-right: 24px;
+    }
   }
   &__channel {
     font-size: 14px;
     font-weight: 600;
+    @include tablet {
+      margin-right: 36px;
+    }
   }
-  &__date,
-  &__likes-num,
-  &__views-num {
+  &__date {
     @include body-copy;
     color: $primary-silver;
+  }
+  &__likes-num,
+  &__views-num {
+    @extend .video-info__date;
+    @include tablet {
+      margin-left: 36px;
+    }
   }
   &__like-icon,
   &__view-icon {

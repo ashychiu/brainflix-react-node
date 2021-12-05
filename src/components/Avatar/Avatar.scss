@@ -45,4 +45,7 @@
   @extend .comment-form__avatar;
   margin-top: 16px;
   margin-right: 16px;
+  @include tablet {
+    margin-top: 0;
+  }
 }

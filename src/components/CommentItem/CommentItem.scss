@@ -4,22 +4,35 @@
 .comment-item {
   display: flex;
   padding: 0;
+  margin: 16px 0;
   &__main-container {
     display: flex;
     flex-direction: column;
+    @include desktop {
+      padding-right: 24px;
+    }
   }
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5px;
   }
   &__name {
     @include body-copy;
     font-weight: 600;
+    @include tablet {
+      @include tablet-body-copy;
+      font-weight: 600;
+      margin: 0;
+    }
   }
   &__date {
     @include body-copy;
     color: $primary-silver;
+    @include tablet {
+      margin: 0;
+    }
   }
   &__content {
     @include body-copy;

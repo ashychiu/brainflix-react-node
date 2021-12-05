@@ -48,10 +48,9 @@
     padding: 0.75rem;
     border: 1px solid $secondary-mercury;
     border-radius: 4px;
-    box-sizing: border-box;
-    resize: vertical;
     outline: none;
     background-color: $secondary-alabaster;
+    margin-left: 5px;
   }
   &:focus {
     border: 1px solid $primary-black;

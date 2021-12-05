@@ -6,10 +6,23 @@
     padding: $padding;
     display: flex;
     flex-direction: column;
+    @include tablet {
+      padding: 0px 36px 16px 36px;
+    }
+    @include desktop {
+      border-left: 1px solid $primary-silver;
+      padding-left: 24px;
+    }
   }
   &__heading {
     color: $primary-silver;
     font-size: 14px;
     font-weight: 550;
+    @include tablet {
+      margin: 24px;
+    }
+    @include desktop {
+      margin: 24px 0;
+    }
   }
 }
