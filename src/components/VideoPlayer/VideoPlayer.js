@@ -4,7 +4,9 @@ const VideoPlayer = (props) => {
   const { image } = props.selectedVideo;
   return (
     <>
-      <video className="video-details__video" controls poster={image}></video>
+      <video className="video-details__video" controls poster={image}>
+        Your browser does not support the video tag.
+      </video>
     </>
   );
 };

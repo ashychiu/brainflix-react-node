@@ -11,7 +11,10 @@
     }
     @include desktop {
       border-left: 1px solid $primary-silver;
-      padding-left: 24px;
+      width: 100%;
+      padding: 0 16px 36px 24px;
+      background-color: darkcyan;
+      flex-basis: 360px; // fixed width for flex box
     }
   }
   &__heading {
@@ -19,7 +22,7 @@
     font-size: 14px;
     font-weight: 550;
     @include tablet {
-      margin: 24px;
+      margin: 24px 0;
     }
     @include desktop {
       margin: 24px 0;

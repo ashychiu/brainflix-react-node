@@ -9,20 +9,24 @@
   &__thumb {
     width: 120px;
     height: 70px;
+    aspect-ratio: 1.25;
     object-position: center;
     object-fit: cover;
     border-radius: 4px;
+    flex-shrink: 0;
   }
   &__container {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    background-color: darkgoldenrod;
     margin-left: 16px;
   }
   &__title {
     @include body-copy;
     font-weight: 600;
     margin-bottom: 10px;
+    margin-top: 0;
     @include desktop {
       margin: 0;
     }

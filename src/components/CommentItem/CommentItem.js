@@ -1,4 +1,3 @@
-import { getByPlaceholderText } from "@testing-library/react";
 import formatDate from "../../utils/formatDate";
 import Avatar from "../Avatar/Avatar";
 import placeholder from "../../assets/images/placeholder.jpg";
