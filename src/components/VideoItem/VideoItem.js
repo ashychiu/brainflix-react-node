@@ -1,9 +1,14 @@
 import "./VideoItem.scss";
 
+function scrollToTop() {
+  window.scrollTo(0, 0);
+}
+
 const VideoItem = (props) => {
   const handleVideoSelect = (e) => {
     e.preventDefault();
     props.onVideoSelect(props.id);
+    scrollToTop(); //scroll up the selected video when onclick
   };
 
   return (

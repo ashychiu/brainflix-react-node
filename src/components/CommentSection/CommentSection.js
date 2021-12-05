@@ -1,6 +1,7 @@
 import CommentItem from "../CommentItem/CommentItem";
 import Button from "../Button/Button";
 import "./CommentSection.scss";
+import { v4 as uid } from "uuid";
 
 const CommentSection = (props) => {
   return (
@@ -10,16 +11,16 @@ const CommentSection = (props) => {
       <section className="comment-section">
         {props.comments.length} comments
         <Button />
-        {props.comments.map((comment) => {
+        {props.comments.map((comment, uid) => {
           return (
             <CommentItem
+              key={uid}
               name={comment.name}
               timestamp={comment.timestamp}
               comment={comment.comment}
             />
           );
         })}
-        >
       </section>
     </>
   );

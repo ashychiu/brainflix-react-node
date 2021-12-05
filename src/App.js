@@ -28,7 +28,6 @@ class App extends Component {
         <Header />
         <VideoDetails selectedVideo={this.state.selectedVideo} />
         <VideoNav videos={nextVideos} onVideoSelect={this.handleVideoSelect} />
-        {console.log(videoData)}
       </div>
     );
   }
