@@ -23,7 +23,7 @@
     @include page-header;
     @include tablet {
       @include tablet-page-header;
-      margin-bottom: 0.314px;
+      margin-bottom: 0.3125rem;
     }
   }
   &__description {
