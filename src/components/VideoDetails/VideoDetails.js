@@ -1,8 +1,6 @@
 import CommentSection from "../CommentSection/CommentSection";
 import formatDate from "../../utils/formatDate";
 import "./VideoDetails.scss";
-import likeIcon from "../../assets/icons/likes.svg";
-import viewIcon from "../../assets/icons/views.svg";
 
 const VideoDetails = (props) => {
   const { channel, title, timestamp, description, likes, views, comments } =
@@ -13,7 +11,7 @@ const VideoDetails = (props) => {
       <div className="video-details__container">
         <h2 className="video-details__title">{title}</h2>
         <hr className="video-details__divider-mobile" />
-        {/* separate container for video info */}
+        {/* different BEM block name for video info */}
         <div className="video-info__outter-container">
           <div className="video-info__left-container">
             <h3 className="video-info__channel">By {channel}</h3>

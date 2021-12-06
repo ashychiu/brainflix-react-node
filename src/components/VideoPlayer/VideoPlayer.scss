@@ -9,9 +9,11 @@
     max-height: 18.75rem;
     @include tablet {
       max-height: 25rem;
+      padding: 0 2.25rem;
     }
     @include desktop {
       max-height: 31.25rem;
+      padding: 0 15rem;
     }
   }
 }

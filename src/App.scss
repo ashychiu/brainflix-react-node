@@ -14,13 +14,6 @@ body {
   font-family: "Avenir", Verdana, Geneva, Tahoma, sans-serif; // Added fallback fonts
 }
 
-a {
-  text-decoration: none;
-  color: $primary-white;
-  &:hover {
-    opacity: 0.75; //overlay hover effect on links
-  }
-}
 hr {
   border: 1px solid $secondary-mercury;
   width: 100%;

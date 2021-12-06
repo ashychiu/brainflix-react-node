@@ -21,9 +21,11 @@ const Header = () => {
             type="search"
             placeholder="Search"
           />
+          {/* mobile version avatar position is in the middle */}
           <Avatar className="header__avatar-mobile" src={mohan} />
         </div>
         <Button id="uploadButton" placeholder="UPLOAD" />
+        {/* tablet/desktop version avatar is at the end*/}
         <Avatar className="header__avatar-tab-desk" src={mohan} />
       </div>
     </header>

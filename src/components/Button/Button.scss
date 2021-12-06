@@ -8,7 +8,7 @@
   background-position-x: 10px;
   background-color: $primary-blue;
   width: 100%;
-  height: 2.25rem;
+  height: 2.5rem;
   border: none;
   color: $primary-white;
   margin-top: 1rem;
@@ -19,7 +19,6 @@
   font-weight: 400;
   @include tablet {
     width: 33%;
-    height: 2.5rem;
     margin: 0.625rem 0 0.625rem 1.5rem;
   }
   @include desktop {

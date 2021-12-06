@@ -15,18 +15,19 @@ const CommentForm = () => {
         </div>
         <div className="comment-form__input-container">
           <div className="comment-form__input-container-tab-desk">
+            {/* mobile version comment form is textarea */}
             <form className="comment-form">
               <label>JOIN THE CONVERSATION </label>
               <textarea
                 className="comment-form__input-mobile"
                 type="textbox"
-                id="comment"
-                name="comment"
+                id="comment-input"
+                name="comment-input"
                 rows="5"
                 placeholder="Add a new comment"
               ></textarea>
             </form>
-
+            {/* tablet/desktop comment form is text-input */}
             <InputField
               className="comment-form__input"
               type="text"
