@@ -4,11 +4,12 @@
 .comment-item {
   display: flex;
   padding: 0;
-  margin: 16px 0;
+  margin-bottom: 16px;
   @include desktop {
     width: 100%;
   }
   &__main-container {
+    margin: 0;
     display: flex;
     flex-direction: column;
     @include desktop {
@@ -20,7 +21,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 5px;
+    @include desktop {
+      margin-top: 16px;
+    }
+  }
+  &__avatar-container {
+    @include tablet {
+      margin-right: 8px;
+    }
+    @include desktop {
+      margin-right: 16px;
+    }
   }
   &__name {
     @include body-copy;
@@ -35,6 +46,7 @@
     @include body-copy;
     color: $primary-silver;
     @include tablet {
+      @include tablet-body-copy;
       margin: 0;
     }
   }
@@ -42,5 +54,11 @@
     @include body-copy;
     margin: 0;
     padding-bottom: 5px;
+    @include tablet {
+      @include tablet-body-copy;
+    }
+    @include desktop {
+      margin-top: 10px;
+    }
   }
 }

@@ -1,7 +1,7 @@
 import React from "react";
-import "./InputForm.scss";
+import "./InputField.scss";
 
-const InputForm = (props) => {
+const InputField = (props) => {
   return (
     <input
       row={props.row}
@@ -12,4 +12,4 @@ const InputForm = (props) => {
   );
 };
 
-export default InputForm;
+export default InputField;

@@ -11,16 +11,18 @@ const CommentSection = (props) => {
           {props.comments.length} Comments
         </p>
         <CommentForm />
-        {props.comments.map((comment, uid) => {
-          return (
-            <CommentItem
-              key={uid}
-              name={comment.name}
-              timestamp={comment.timestamp}
-              comment={comment.comment}
-            />
-          );
-        })}
+        <div className="comment-section__list">
+          {props.comments.map((comment, uid) => {
+            return (
+              <CommentItem
+                key={uid}
+                name={comment.name}
+                timestamp={comment.timestamp}
+                comment={comment.comment}
+              />
+            );
+          })}
+        </div>
       </section>
     </>
   );

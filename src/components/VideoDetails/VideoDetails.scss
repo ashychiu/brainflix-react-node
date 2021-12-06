@@ -2,16 +2,12 @@
 @use "../../styles/partials/mixins" as *;
 
 .video-details {
-  background-color: crimson;
   @include desktop {
     flex-basis: 800px; // fixed width for flex box
   }
-
-  &__video {
-    width: 100%;
-  }
   &__container {
     padding: $padding;
+    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     @include tablet {
@@ -19,6 +15,7 @@
     }
     @include desktop {
       padding-right: 0;
+      padding-bottom: 36px;
       width: 100%;
     }
   }
@@ -96,11 +93,16 @@
       margin-left: 36px;
     }
   }
-  &__like-icon,
-  &__view-icon {
-    margin-bottom: 0;
-    margin-right: 5px;
-  }
+}
+
+.video-info__likes-num::before {
+  content: url(../../assets/icons/likes.svg);
+  margin-right: 5px;
+}
+
+.video-info__views-num::before {
+  content: url(../../assets/icons/views.svg);
+  margin-right: 5px;
 }
 
 hr {

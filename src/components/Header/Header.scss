@@ -10,6 +10,8 @@
     justify-content: center;
     align-items: center;
     @include tablet {
+      padding-top: 10px;
+      padding-bottom: 10px;
       flex-direction: row;
       justify-content: space-between;
     }
@@ -29,15 +31,15 @@
       width: 20%;
     }
   }
-  &__logo {
+  &__logo-container {
     margin-bottom: 16px;
     @include tablet {
       margin-bottom: 0;
       padding: 0 90px 0 24px;
     }
     @include desktop {
-      margin-left: 6%;
-      margin-right: auto;
+      margin-left: 8%;
+      flex-grow: 2;
     }
   }
   &__searchbar {

@@ -6,9 +6,18 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin-bottom: 16px;
     @include tablet {
       justify-content: center;
       margin-bottom: 24px;
+    }
+  }
+  &__avatar-container {
+    @include tablet {
+      margin-right: 8px;
+    }
+    @include desktop {
+      margin-right: 16px;
     }
   }
   &__input-container {
@@ -30,7 +39,8 @@
   }
   label {
     color: $primary-silver;
-    @include label-button;
+    @include body-copy;
+    font-weight: 550;
     @include tablet {
       margin-left: 5px;
     }
@@ -61,7 +71,7 @@
       border: 1px solid $secondary-alabaster;
     }
     &::placeholder {
-      @include label-button;
+      @include body-copy;
       font-family: "Avenir", Verdana, Geneva, Tahoma, sans-serif;
       color: $primary-black;
       @include tablet {

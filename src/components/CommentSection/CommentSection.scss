@@ -3,10 +3,18 @@
 
 .comment-section {
   @include desktop {
-    margin-top: 36px;
+    margin-top: 24px;
   }
   &__num-of {
+    margin-top: 8px;
     @include body-copy;
     font-weight: 600;
+  }
+}
+
+//no divider after the last comment on desktop version
+.comment-section__list hr:last-child {
+  @include desktop {
+    display: none;
   }
 }

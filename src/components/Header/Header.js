@@ -4,15 +4,19 @@ import Avatar from "../Avatar/Avatar";
 import mohan from "../../assets/images/Mohan-muruge.jpg";
 import "./Header.scss";
 import Button from "../Button/Button";
-import InputForm from "../InputForm/InputForm";
+import InputField from "../InputField/InputField";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="header__container">
-        <img className="header__logo" src={logo} alt="BrainFlix logo" />
+        <div className="header__logo-container">
+          <a href="./">
+            <img className="header__logo" src={logo} alt="BrainFlix logo" />
+          </a>
+        </div>
         <div className="header__container-mobile">
-          <InputForm
+          <InputField
             className="header__searchbar"
             type="search"
             placeholder="Search"

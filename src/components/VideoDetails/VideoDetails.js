@@ -5,16 +5,8 @@ import likeIcon from "../../assets/icons/likes.svg";
 import viewIcon from "../../assets/icons/views.svg";
 
 const VideoDetails = (props) => {
-  const {
-    channel,
-    image,
-    title,
-    timestamp,
-    description,
-    likes,
-    views,
-    comments,
-  } = props.selectedVideo;
+  const { channel, title, timestamp, description, likes, views, comments } =
+    props.selectedVideo;
 
   return (
     <section className="video-details">
@@ -28,14 +20,8 @@ const VideoDetails = (props) => {
             <p className="video-info__date">{formatDate(timestamp)}</p>
           </div>
           <div className="video-info__right-container">
-            <p className="video-info__likes-num">
-              <img className="video-info__like-icon" src={likeIcon} />
-              {likes}
-            </p>
-            <p className="video-info__views-num">
-              <img className="video-info__view-icon" src={viewIcon} />
-              {views}
-            </p>
+            <p className="video-info__views-num">{views}</p>{" "}
+            <p className="video-info__likes-num">{likes}</p>
           </div>
         </div>
         <hr />
