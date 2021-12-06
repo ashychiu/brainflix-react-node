@@ -3,10 +3,10 @@
 
 .comment-section {
   @include desktop {
-    margin-top: 24px;
+    margin-top: 1.5rem;
   }
   &__num-of {
-    margin-top: 8px;
+    margin-top: 0.5rem;
     @include body-copy;
     font-weight: 600;
   }

@@ -3,7 +3,7 @@
 
 .video-details {
   @include desktop {
-    flex-basis: 800px; // fixed width for flex box
+    flex-basis: 50rem; // fixed width for flex box
   }
   &__container {
     padding: $padding;
@@ -11,11 +11,11 @@
     display: flex;
     flex-direction: column;
     @include tablet {
-      padding: 16px 36px 0px 36px;
+      padding: 1rem 2.25rem 0rem 2.25rem;
     }
     @include desktop {
       padding-right: 0;
-      padding-bottom: 36px;
+      padding-bottom: 2.25rem;
       width: 100%;
     }
   }
@@ -23,7 +23,7 @@
     @include page-header;
     @include tablet {
       @include tablet-page-header;
-      margin-bottom: 5px;
+      margin-bottom: 0.314px;
     }
   }
   &__description {
@@ -32,10 +32,17 @@
       @include tablet-body-copy;
     }
     @include desktop {
-      padding-right: 24px;
+      padding-right: 1.5rem;
+    }
+  }
+  &__divider {
+    margin: 0;
+    @include tablet {
+      margin-bottom: 0.625rem;
     }
   }
   &__divider-mobile {
+    @extend .video-details__divider;
     @include tablet {
       display: none;
     }
@@ -45,8 +52,6 @@
 .video-info {
   &__outter-container {
     width: 100%;
-    padding-right: 24px;
-    margin: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -65,6 +70,7 @@
   }
   &__right-container {
     @extend .video-info__left-container;
+    padding-right: 1.5rem;
     @include tablet {
       width: 50%;
       display: flex;
@@ -72,14 +78,14 @@
       align-items: center;
     }
     @include desktop {
-      padding-right: 24px;
+      padding-right: 1.5rem;
     }
   }
   &__channel {
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 600;
     @include tablet {
-      margin-right: 36px;
+      margin-right: 2.25rem;
     }
   }
   &__date {
@@ -90,21 +96,19 @@
   &__views-num {
     @extend .video-info__date;
     @include tablet {
-      margin-left: 36px;
+      margin-left: 2.25rem;
     }
   }
 }
 
 .video-info__likes-num::before {
+  vertical-align: middle;
   content: url(../../assets/icons/likes.svg);
-  margin-right: 5px;
+  margin-right: 0.3125rem;
 }
 
 .video-info__views-num::before {
+  vertical-align: middle;
   content: url(../../assets/icons/views.svg);
-  margin-right: 5px;
-}
-
-hr {
-  width: 100%;
+  margin-right: 0.3125rem;
 }

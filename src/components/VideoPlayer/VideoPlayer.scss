@@ -6,12 +6,12 @@
     aspect-ratio: 1.78;
     background-color: $secondary-darkblack;
     width: 100%;
-    max-height: 300px;
+    max-height: 18.75rem;
     @include tablet {
-      max-height: 400px;
+      max-height: 25rem;
     }
     @include desktop {
-      max-height: 500px;
+      max-height: 31.25rem;
     }
   }
 }

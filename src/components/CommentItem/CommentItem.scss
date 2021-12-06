@@ -4,7 +4,10 @@
 .comment-item {
   display: flex;
   padding: 0;
-  margin-bottom: 16px;
+  margin-bottom: 1rem;
+  @include tablet {
+    margin-top: 1rem;
+  }
   @include desktop {
     width: 100%;
   }
@@ -13,52 +16,53 @@
     display: flex;
     flex-direction: column;
     @include desktop {
-      padding-right: 24px;
+      padding-right: 1.5rem;
       flex-grow: 2;
     }
   }
-  &__container {
+  &__top-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 0;
     @include desktop {
-      margin-top: 16px;
+      margin-top: 1rem;
     }
   }
   &__avatar-container {
     @include tablet {
-      margin-right: 8px;
+      margin-right: 0.5rem;
     }
     @include desktop {
-      margin-right: 16px;
+      margin-right: 1rem;
     }
   }
   &__name {
     @include body-copy;
     font-weight: 600;
     @include tablet {
+      margin: 0 0 0.5rem 0;
       @include tablet-body-copy;
       font-weight: 600;
+    }
+    @include desktop {
       margin: 0;
     }
   }
   &__date {
-    @include body-copy;
+    @extend .comment-item__name;
+    font-weight: 400;
     color: $primary-silver;
-    @include tablet {
-      @include tablet-body-copy;
-      margin: 0;
-    }
   }
   &__content {
     @include body-copy;
     margin: 0;
-    padding-bottom: 5px;
     @include tablet {
       @include tablet-body-copy;
+      padding-bottom: 0.3125rem;
     }
     @include desktop {
-      margin-top: 10px;
+      margin: 0.625rem 0 0.75rem 0;
     }
   }
 }

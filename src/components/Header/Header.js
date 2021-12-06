@@ -15,7 +15,7 @@ const Header = () => {
             <img className="header__logo" src={logo} alt="BrainFlix logo" />
           </a>
         </div>
-        <div className="header__container-mobile">
+        <div className="header__item-container">
           <InputField
             className="header__searchbar"
             type="search"

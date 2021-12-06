@@ -11,7 +11,7 @@ const CommentItem = (props) => {
           <Avatar className={"comment-item__avatar"} src={placeholder} />
         </div>
         <div className="comment-item__main-container">
-          <div className="comment-item__container">
+          <div className="comment-item__top-container">
             <p className="comment-item__name">{props.name}</p>
             <p className="comment-item__date">{formatDate(props.timestamp)}</p>
           </div>

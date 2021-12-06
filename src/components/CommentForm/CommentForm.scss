@@ -6,18 +6,17 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     @include tablet {
-      justify-content: center;
-      margin-bottom: 24px;
+      margin-bottom: 1.5rem;
     }
   }
   &__avatar-container {
     @include tablet {
-      margin-right: 8px;
+      margin-right: 0.5rem;
     }
     @include desktop {
-      margin-right: 16px;
+      margin-right: 1rem;
     }
   }
   &__input-container {
@@ -42,12 +41,8 @@
     @include body-copy;
     font-weight: 550;
     @include tablet {
-      margin-left: 5px;
+      margin-left: 0.3125rem;
     }
-  }
-  &__avatar {
-    margin-right: 10px;
-    padding: 0;
   }
   textarea {
     background-repeat: no-repeat;

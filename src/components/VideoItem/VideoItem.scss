@@ -4,7 +4,7 @@
 .video-item {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
   @include tablet {
     width: 45%;
   }
@@ -13,15 +13,15 @@
   }
 
   &__thumb {
-    width: 100px;
-    height: 60px;
+    width: 6.25rem;
+    height: 3.75rem;
     object-position: center;
     object-fit: cover;
     border-radius: 4px;
     flex-shrink: 0;
     @include tablet {
-      width: 110px;
-      height: 65px;
+      width: 6.875rem;
+      height: 4.0625rem;
     }
   }
   &__thumb-container {
@@ -31,13 +31,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    margin-left: 16px;
+    margin-left: 1rem;
   }
   &__title {
     color: $primary-black;
     @include body-copy;
     font-weight: 600;
-    margin-bottom: 5px;
+    margin-bottom: 0.3125rem;
     margin-top: 0;
     @include tablet {
       @include tablet-body-copy;
@@ -51,12 +51,12 @@
     @include body-copy;
     color: $primary-black;
     font-weight: 400;
-    margin: 0 0 5px 0;
+    margin: 0 0 0.3125rem 0;
     @include tablet {
       @include tablet-body-copy;
     }
     @include desktop {
-      margin-top: 5px;
+      margin-top: 0.3125rem;
     }
   }
 }

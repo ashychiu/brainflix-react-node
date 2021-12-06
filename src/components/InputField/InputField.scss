@@ -5,7 +5,7 @@
   color: $primary-black;
   font-family: "Avenir", Verdana, Geneva, Tahoma, sans-serif;
   width: 100%;
-  height: 36px;
+  height: 2.25rem;
   padding: 0.75rem;
   border: 1px solid $secondary-mercury;
   border-radius: 4px;
@@ -14,7 +14,7 @@
   outline: none;
   background-color: $secondary-alabaster;
   @include tablet {
-    height: 40px;
+    height: 2.5rem;
     padding: 1rem;
   }
   &:focus {
@@ -26,7 +26,7 @@
   &::placeholder {
     background-image: url("../../assets/icons/search.svg");
     background-repeat: no-repeat;
-    padding-left: 24px;
+    padding-left: 1.5rem;
     @include label-button;
     font-family: "Avenir", Verdana, Geneva, Tahoma, sans-serif;
     color: $primary-black;
@@ -40,7 +40,7 @@
   display: none;
   @include tablet {
     display: block;
-    height: 40px;
+    height: 2.5rem;
     padding: 1rem;
     color: $primary-black;
     font-family: "Avenir", Verdana, Geneva, Tahoma, sans-serif;
@@ -50,7 +50,7 @@
     border-radius: 4px;
     outline: none;
     background-color: $secondary-alabaster;
-    margin-left: 5px;
+    margin-left: 0.3125rem;
   }
   &:focus {
     border: 1px solid $primary-blue;

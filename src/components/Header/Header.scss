@@ -7,11 +7,10 @@
     padding: $padding;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     @include tablet {
-      padding-top: 10px;
-      padding-bottom: 10px;
+      padding-top: 0.625rem;
+      padding-bottom: 0.625rem;
       flex-direction: row;
       justify-content: space-between;
     }
@@ -19,7 +18,7 @@
       justify-content: flex-end;
     }
   }
-  &__container-mobile {
+  &__item-container {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -32,10 +31,10 @@
     }
   }
   &__logo-container {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
     @include tablet {
       margin-bottom: 0;
-      padding: 0 90px 0 24px;
+      padding: 0 5.625rem 0 1.5rem;
     }
     @include desktop {
       margin-left: 8%;

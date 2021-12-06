@@ -24,7 +24,7 @@ const VideoDetails = (props) => {
             <p className="video-info__likes-num">{likes}</p>
           </div>
         </div>
-        <hr />
+        <hr className="video-details__divider" />
         <p className="video-details__description">{description}</p>
         <CommentSection comments={comments} />
       </div>

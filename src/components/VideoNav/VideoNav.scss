@@ -8,24 +8,22 @@
     display: flex;
     flex-direction: column;
     @include tablet {
-      padding: 0px 36px 16px 36px;
+      padding: 0 2.25rem 1rem 2.25rem;
     }
     @include desktop {
       border-left: 1px solid $primary-silver;
       width: 100%;
-      padding: 0 16px 36px 24px;
-      flex-basis: 400px; // fixed width for flex box
+      padding: 0 1rem 2.25rem 1.5rem;
+      flex-basis: 25rem; // fixed width for flex box
     }
   }
   &__heading {
     color: $primary-silver;
-    font-size: 14px;
+    font-size: 0.875rem;
     font-weight: 550;
+    margin-bottom: 1rem;
     @include tablet {
-      margin: 24px 0;
-    }
-    @include desktop {
-      margin: 24px 0;
+      margin: 1.5rem 0;
     }
   }
 }
