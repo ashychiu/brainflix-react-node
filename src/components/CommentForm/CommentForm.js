@@ -2,6 +2,7 @@ import Button from "../Button/Button";
 import Avatar from "../Avatar/Avatar";
 import mohan from "../../assets/images/Mohan-muruge.jpg";
 import InputField from "../InputField/InputField";
+import TextArea from "../TextArea/TextArea";
 import "./CommentForm.scss";
 
 import React from "react";
@@ -18,14 +19,12 @@ const CommentForm = () => {
             {/* mobile version comment form is textarea */}
             <form className="comment-form">
               <label>JOIN THE CONVERSATION </label>
-              <textarea
+              <TextArea
                 className="comment-form__input-mobile"
                 type="textbox"
-                id="comment-input"
-                name="comment-input"
                 rows="5"
                 placeholder="Add a new comment"
-              ></textarea>
+              />
             </form>
             {/* tablet/desktop comment form is text-input */}
             <InputField

@@ -5,15 +5,16 @@ import mohan from "../../assets/images/Mohan-muruge.jpg";
 import "./Header.scss";
 import Button from "../Button/Button";
 import InputField from "../InputField/InputField";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="header">
       <div className="header__container">
         <div className="header__logo-container">
-          <a href="./">
+          <Link to="/">
             <img className="header__logo" src={logo} alt="BrainFlix logo" />
-          </a>
+          </Link>
         </div>
         <div className="header__item-container">
           <InputField
@@ -24,7 +25,9 @@ const Header = () => {
           {/* mobile version avatar position is in the middle */}
           <Avatar className="header__avatar-mobile" src={mohan} />
         </div>
-        <Button id="uploadButton" placeholder="UPLOAD" />
+        <Link to="/upload">
+          <Button id="uploadButton" placeholder="UPLOAD" />
+        </Link>
         {/* tablet/desktop version avatar is at the end*/}
         <Avatar className="header__avatar-tab-desk" src={mohan} />
       </div>

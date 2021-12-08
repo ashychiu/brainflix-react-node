@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 import "./App.scss";
 import videosList from "./data/videos.json";
 import videoData from "./data/video-details.json";
@@ -6,6 +7,7 @@ import Header from "./components/Header/Header";
 import VideoNav from "./components/VideoNav/VideoNav";
 import VideoDetails from "./components/VideoDetails/VideoDetails";
 import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
+import UploadPage from "./components/pages/UploadPage/UploadPage";
 
 class App extends Component {
   state = {
@@ -26,15 +28,20 @@ class App extends Component {
 
     return (
       <div className="brainflix">
-        <Header />
-        <VideoPlayer selectedVideo={this.state.selectedVideo} />
-        <div className="brainflix__container-desktop">
-          <VideoDetails selectedVideo={this.state.selectedVideo} />
-          <VideoNav
-            videos={nextVideos}
-            onVideoSelect={this.handleVideoSelect}
-          />
-        </div>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/upload" component={UploadPage} />
+          </Switch>
+          <Header />
+          <VideoPlayer selectedVideo={this.state.selectedVideo} />
+          <div className="brainflix__container-desktop">
+            <VideoDetails selectedVideo={this.state.selectedVideo} />
+            <VideoNav
+              videos={nextVideos}
+              onVideoSelect={this.handleVideoSelect}
+            />
+          </div>
+        </BrowserRouter>
       </div>
     );
   }

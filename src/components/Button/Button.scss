@@ -27,6 +27,7 @@
   //hover effect on button
   &:hover {
     background-color: $secondary-darkblue;
+    cursor: pointer;
   }
 }
 
@@ -41,5 +42,37 @@
   }
   @include desktop {
     width: 28%;
+  }
+}
+
+#publishButton {
+  @extend #uploadButton;
+  background-image: url("../../assets/icons/publish.svg");
+  margin-top: 0.625rem;
+  @include tablet {
+    width: 25%;
+    height: 2.5rem;
+    margin: 0 0 0 1.75rem;
+  }
+  @include desktop {
+    width: 28%;
+  }
+}
+
+#cancelButton {
+  @extend #uploadButton;
+  background: none;
+  color: $primary-blue;
+  margin-top: 0.625rem;
+  @include tablet {
+    width: 25%;
+    height: 2.5rem;
+    margin: 0 0 0 1.75rem;
+  }
+  @include desktop {
+    width: 28%;
+  }
+  &:hover {
+    background: none;
   }
 }

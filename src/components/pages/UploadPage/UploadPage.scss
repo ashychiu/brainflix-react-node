@@ -1,0 +1,29 @@
+@use "../../../styles/partials/variables" as *;
+@use "../../../styles/partials/mixins" as *;
+
+.upload-page {
+  &__container {
+    width: 100%;
+    padding: $padding;
+  }
+  &__title {
+    @include page-header;
+    padding-left: 16px;
+    margin-bottom: 0;
+  }
+}
+.upload-form {
+  &__thumb {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 5px;
+  }
+}
+label {
+  color: $primary-silver;
+  @include body-copy;
+  font-weight: 600;
+  @include tablet {
+    margin-left: 0.3125rem;
+  }
+}

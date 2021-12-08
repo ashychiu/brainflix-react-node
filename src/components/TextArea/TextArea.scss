@@ -1,0 +1,40 @@
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
+
+.comment-form__input-mobile {
+  background-repeat: no-repeat;
+  color: $primary-black;
+  font-family: "Avenir", Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid $secondary-mercury;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  outline: none;
+  background-color: $secondary-alabaster;
+  @include tablet {
+    display: none;
+  }
+  &:focus {
+    border: 1px solid $primary-blue;
+  }
+  &:default {
+    border: 1px solid $secondary-alabaster;
+  }
+  &::placeholder {
+    @include body-copy;
+    font-family: "Avenir", Verdana, Geneva, Tahoma, sans-serif;
+    color: $primary-black;
+    @include tablet {
+      font-size: 1.1em;
+    }
+  }
+}
+
+.upload-form__description {
+  @extend .comment-form__input-mobile;
+  @include tablet {
+    display: block;
+  }
+}
