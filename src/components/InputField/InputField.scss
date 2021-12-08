@@ -71,6 +71,9 @@
 .upload-form__title {
   @extend .header__searchbar;
   margin-bottom: 5px;
+  @include tablet {
+    margin-bottom: 16px;
+  }
   &::placeholder {
     background: none;
     padding-left: 0;

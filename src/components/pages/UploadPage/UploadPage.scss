@@ -5,24 +5,71 @@
   &__container {
     width: 100%;
     padding: $padding;
+    @include tablet {
+      padding: 0 36px;
+    }
+    @include desktop {
+      width: 80%;
+      margin: auto;
+    }
   }
   &__title {
     @include page-header;
-    padding-left: 16px;
-    margin-bottom: 0;
+    margin-bottom: 16px;
+    @include tablet {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__divider-tab-desk {
+    display: none;
+    @include tablet {
+      display: block;
+      margin: 16px 0;
+    }
+  }
+  &__button-container {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row-reverse;
+    }
   }
 }
 .upload-form {
+  display: flex;
+  flex-direction: column;
+  @include desktop {
+    flex-direction: row;
+    justify-content: center;
+  }
+  &__input-container {
+    width: 100%;
+    flex-grow: 2;
+  }
+  &__thumb-container {
+    width: 50%;
+    flex-grow: 0;
+  }
   &__thumb {
     width: 100%;
     border-radius: 4px;
     margin-bottom: 5px;
+    @include tablet {
+      width: 50%;
+    }
+    @include desktop {
+      width: 100%;
+      padding: $padding;
+      border-radius: 20px;
+    }
   }
 }
 label {
   color: $primary-silver;
   @include body-copy;
   font-weight: 600;
+  display: block;
   @include tablet {
     margin-left: 0.3125rem;
   }

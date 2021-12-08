@@ -11,32 +11,40 @@ const UploadPage = () => {
     <>
       <Header />
       <hr />
-
-      <h2 className="upload-page__title">Upload Video</h2>
       <div className="upload-page__container">
+        <h2 className="upload-page__title">Upload Video</h2>
+        <hr className="upload-page__divider-tab-desk" />
+
         <form className="upload-form">
-          <label>VIDEO THUMBNAIL</label>
-          <img
-            className="upload-form__thumb"
-            src={videopreview}
-            alt="Video Thumbnail"
-          />
-          <label>TITLE YOUR VIDEO</label>
-          <InputField
-            className="upload-form__title"
-            type="text"
-            placeholder="Add a title to your video"
-          />
-          <label>ADD A VIDEO DESCRIPTION</label>
-          <TextArea
-            className="upload-form__description"
-            type="textbox"
-            rows="4"
-            placeholder="Add a description to your video"
-          />
+          <div className="upload-form__thumb-container">
+            <label>VIDEO THUMBNAIL</label>
+            <img
+              className="upload-form__thumb"
+              src={videopreview}
+              alt="Video Thumbnail"
+            />
+          </div>
+          <div className="upload-form__input-container">
+            <label>TITLE YOUR VIDEO</label>
+            <InputField
+              className="upload-form__title"
+              type="text"
+              placeholder="Add a title to your video"
+            />
+            <label>ADD A VIDEO DESCRIPTION</label>
+            <TextArea
+              className="upload-form__description"
+              type="textbox"
+              rows="4"
+              placeholder="Add a description to your video"
+            />
+          </div>
         </form>
-        <Button id="publishButton" placeholder="PUBLISH" />
-        <Button id="cancelButton" placeholder="CANCEL" />
+        <hr className="upload-page__divider-tab-desk" />
+        <div className="upload-page__button-container">
+          <Button id="publishButton" placeholder="PUBLISH" />
+          <Button id="cancelButton" placeholder="CANCEL" />
+        </div>
       </div>
     </>
   );
