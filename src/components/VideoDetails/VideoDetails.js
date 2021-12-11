@@ -3,6 +3,7 @@ import formatDate from "../../utils/formatDate";
 import "./VideoDetails.scss";
 
 const VideoDetails = (props) => {
+  console.log(props);
   const { channel, title, timestamp, description, likes, views, comments } =
     props.selectedVideo;
 

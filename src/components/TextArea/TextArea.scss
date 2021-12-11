@@ -10,7 +10,7 @@
   border: 1px solid $secondary-mercury;
   border-radius: 4px;
   box-sizing: border-box;
-  resize: vertical;
+  resize: none;
   outline: none;
   background-color: $secondary-alabaster;
   @include tablet {

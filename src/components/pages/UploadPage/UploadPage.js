@@ -6,7 +6,11 @@ import Button from "../../Button/Button";
 import videopreview from "../../../assets/images/Upload-video-preview.jpg";
 import "./UploadPage.scss";
 
-const UploadPage = () => {
+const UploadPage = (props) => {
+  const handleVideoUpload = () => {
+    alert("Video uploaded sucessfully");
+    props.history.goBack();
+  };
   return (
     <>
       <Header />
@@ -42,7 +46,13 @@ const UploadPage = () => {
         </form>
         <hr className="upload-page__divider-tab-desk" />
         <div className="upload-page__button-container">
-          <Button id="publishButton" placeholder="PUBLISH" />
+          <Button
+            id="publishButton"
+            placeholder="PUBLISH"
+            onClick={() => {
+              handleVideoUpload();
+            }}
+          />
           <Button id="cancelButton" placeholder="CANCEL" />
         </div>
       </div>

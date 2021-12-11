@@ -1,13 +1,8 @@
 import "./VideoItem.scss";
 
 const VideoItem = (props) => {
-  const handleVideoSelect = (e) => {
-    e.preventDefault();
-    props.onVideoSelect(props.id);
-  };
-
   return (
-    <article className="video-item" onClick={handleVideoSelect}>
+    <article className="video-item">
       <div className="video-item__thumb-container">
         <img
           className="video-item__thumb"

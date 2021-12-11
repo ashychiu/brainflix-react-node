@@ -1,50 +1,52 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.scss";
-import videosList from "./data/videos.json";
-import videoData from "./data/video-details.json";
-import Header from "./components/Header/Header";
-import VideoNav from "./components/VideoNav/VideoNav";
-import VideoDetails from "./components/VideoDetails/VideoDetails";
-import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
+import HomePage from "./components/pages/HomePage/HomePage";
 import UploadPage from "./components/pages/UploadPage/UploadPage";
+import Home from "./components/pages/HomePage/Home";
 
-class App extends Component {
-  state = {
-    videos: videosList,
-    selectedVideo: videoData[0],
-  };
+const App = () => {
+  return (
+    <div>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/videos/:videoId" component={Home} />
+          <Route path="/upload" component={UploadPage} />
+        </Switch>
+      </BrowserRouter>
+    </div>
+  );
+};
 
-  handleVideoSelect = (id) => {
-    this.setState({
-      selectedVideo: videoData.find((video) => video.id === id),
-    });
-  };
+// export default App;
+// class App extends Component {
+// state = {
+//   videos: videosList,
+//   selectedVideo: videoData[0],
+// };
 
-  render() {
-    const nextVideos = videosList.filter(
-      (video) => video.id !== this.state.selectedVideo.id
-    );
+// handleVideoSelect = (id) => {
+//   this.setState({
+//     selectedVideo: videoData.find((video) => video.id === id),
+//   });
+// };
 
-    return (
-      <div className="brainflix">
-        <BrowserRouter>
-          <Switch>
-            <Route path="/upload" component={UploadPage} />
-          </Switch>
-          <Header />
-          <VideoPlayer selectedVideo={this.state.selectedVideo} />
-          <div className="brainflix__container-desktop">
-            <VideoDetails selectedVideo={this.state.selectedVideo} />
-            <VideoNav
-              videos={nextVideos}
-              onVideoSelect={this.handleVideoSelect}
-            />
-          </div>
-        </BrowserRouter>
-      </div>
-    );
-  }
-}
+// render() {
+// const nextVideos = videosList.filter(
+//   (video) => video.id !== this.state.selectedVideo.id
+// );
+
+// return (
+//       <BrowserRouter>
+//         <Header />
+//         <Switch>
+//           <Route path="/" exact component={HomePage} />
+//           <Route path="/upload" component={UploadPage} />
+//         </Switch>
+//       </BrowserRouter>
+//     );
+//   }
+// }
 
 export default App;

@@ -1,4 +1,5 @@
 import VideoItem from "../VideoItem/VideoItem";
+import { NavLink } from "react-router-dom";
 import "./VideoNav.scss";
 
 const VideoNav = (props) => {
@@ -7,14 +8,15 @@ const VideoNav = (props) => {
       <h2 className="video-nav__heading">NEXT VIDEOS</h2>
       {props.videos.map((video) => {
         return (
-          <VideoItem
-            key={video.id}
-            id={video.id}
-            title={video.title}
-            channel={video.channel}
-            image={video.image}
-            onVideoSelect={props.onVideoSelect}
-          />
+          <NavLink to={`/videos/${video.id}`} className="video-nav__link">
+            <VideoItem
+              key={video.id}
+              id={video.id}
+              title={video.title}
+              channel={video.channel}
+              image={video.image}
+            />
+          </NavLink>
         );
       })}
     </section>
