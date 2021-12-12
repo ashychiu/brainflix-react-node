@@ -9,7 +9,7 @@ import "./UploadPage.scss";
 const UploadPage = (props) => {
   const handleVideoUpload = () => {
     alert("Video uploaded sucessfully");
-    props.history.goBack();
+    window.location.href = "/"; // onClick going to homepage since previous page maybe other videos
   };
   return (
     <>
@@ -53,7 +53,11 @@ const UploadPage = (props) => {
               handleVideoUpload();
             }}
           />
-          <Button id="cancelButton" placeholder="CANCEL" />
+          <Button
+            id="cancelButton"
+            placeholder="CANCEL"
+            onClick={() => props.history.goBack()} // onClick going back to previous page
+          />
         </div>
       </div>
     </>

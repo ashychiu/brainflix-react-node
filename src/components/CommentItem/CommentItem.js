@@ -4,6 +4,7 @@ import placeholder from "../../assets/images/placeholder.jpg";
 import "./CommentItem.scss";
 
 const CommentItem = (props) => {
+  console.log(props);
   return (
     <>
       <article className="comment-item">

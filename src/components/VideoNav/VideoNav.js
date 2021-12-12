@@ -11,7 +11,7 @@ const VideoNav = (props) => {
         return (
           <NavLink to={`/videos/${video.id}`} className="video-nav__link">
             <VideoItem
-              key={uid}
+              key={uid()}
               id={video.id}
               title={video.title}
               channel={video.channel}

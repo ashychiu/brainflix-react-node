@@ -12,10 +12,10 @@ const CommentSection = (props) => {
         </p>
         <CommentForm />
         <div className="comment-section__list">
-          {props.comments.map((comment, uid) => {
+          {props.comments.map((comment) => {
             return (
               <CommentItem
-                key={uid}
+                key={uid()}
                 name={comment.name}
                 timestamp={comment.timestamp}
                 comment={comment.comment}

@@ -25,10 +25,13 @@ const Header = () => {
           {/* mobile version avatar position is in the middle */}
           <Avatar className="header__avatar-mobile" src={mohan} />
         </div>
-        <Link to="/upload" className="header__container">
-          {/* className="header__container" */}
-          <Button id="uploadButton" placeholder="UPLOAD" />
-        </Link>
+
+        <div id="uploadDiv">
+          <Link to="/upload" className="header__link">
+            UPLOAD
+          </Link>
+        </div>
+
         {/* tablet/desktop version avatar is at the end*/}
         <Avatar className="header__avatar-tab-desk" src={mohan} />
       </div>
