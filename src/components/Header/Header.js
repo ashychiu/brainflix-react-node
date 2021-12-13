@@ -24,7 +24,7 @@ const Header = () => {
           {/* mobile version avatar position is in the middle */}
           <Avatar className="header__avatar-mobile" src={mohan} />
         </div>
-        {/* styling at button.scss */}
+        {/* styling stored at button.scss */}
         <div id="uploadButton">
           <Link to="/upload" className="header__upload-link">
             <p>UPLOAD</p>

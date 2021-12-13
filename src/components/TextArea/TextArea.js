@@ -1,6 +1,7 @@
 import React from "react";
 import "./TextArea.scss";
 
+// Receiving props from UploadPage or CommentForm
 const TextArea = (props) => {
   return (
     <>

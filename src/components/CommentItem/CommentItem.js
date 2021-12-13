@@ -3,6 +3,7 @@ import Avatar from "../Avatar/Avatar";
 import placeholder from "../../assets/images/placeholder.jpg";
 import "./CommentItem.scss";
 
+// Receiving props from CommentSection for individual comments
 const CommentItem = (props) => {
   return (
     <>

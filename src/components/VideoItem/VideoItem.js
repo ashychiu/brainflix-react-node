@@ -1,5 +1,6 @@
 import "./VideoItem.scss";
 
+// Receiving props from VideoNav for indivdual videos
 const VideoItem = (props) => {
   return (
     <article className="video-item">

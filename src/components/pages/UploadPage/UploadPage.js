@@ -6,6 +6,7 @@ import Button from "../../Button/Button";
 import videopreview from "../../../assets/images/Upload-video-preview.jpg";
 import "./UploadPage.scss";
 
+// Receiving props from browser
 const UploadPage = (props) => {
   const handleVideoUpload = () => {
     alert("Video uploaded sucessfully! \nClick OK to redirect to homepage.");

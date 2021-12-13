@@ -1,6 +1,7 @@
 import React from "react";
 import "./InputField.scss";
 
+// Receiving props from Header or CommentForm
 const InputField = (props) => {
   return (
     <input

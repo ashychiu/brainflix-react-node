@@ -2,6 +2,7 @@ import VideoItem from "../VideoItem/VideoItem";
 import { NavLink } from "react-router-dom";
 import "./VideoNav.scss";
 
+// Receiving props from UploadPage for videosList
 const VideoNav = (props) => {
   return (
     <section className="video-nav__list">
