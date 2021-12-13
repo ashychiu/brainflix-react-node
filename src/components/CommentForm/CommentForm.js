@@ -25,7 +25,7 @@ const CommentForm = () => {
                 rows="5"
                 placeholder="Add a new comment"
               />
-            </form>
+            
             {/* tablet/desktop comment form is text-input */}
             <InputField
               className="comment-form__input"
@@ -34,9 +34,9 @@ const CommentForm = () => {
             />
           </div>
           <Button id="submitButton" placeholder="COMMENT" />
-        </div>
-      </div>
+        </div></form>
       <hr />
+      </div>
     </>
   );
 };
