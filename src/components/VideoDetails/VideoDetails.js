@@ -2,7 +2,7 @@ import CommentSection from "../CommentSection/CommentSection";
 import formatDate from "../../utils/formatDate";
 import "./VideoDetails.scss";
 
-// Receiving props from HomePage for selectedVideo
+// Receiving props from HomePage for selectedVideo to display
 const VideoDetails = (props) => {
   const { channel, title, timestamp, description, likes, views, comments } =
     props.selectedVideo;

@@ -21,8 +21,10 @@
   }
   &__title {
     @include page-header;
+    margin-top: 0;
     @include tablet {
       @include tablet-page-header;
+      margin-top: 1rem;
       margin-bottom: 0.3125rem;
     }
   }

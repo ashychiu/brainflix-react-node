@@ -1,7 +1,7 @@
 import React from "react";
 import "./VideoPlayer.scss";
 
-// Receiving props from HomePage for selectedVideo
+// Receiving props from HomePage for selectedVideo to display
 const VideoPlayer = (props) => {
   const { image } = props.selectedVideo;
   return (
