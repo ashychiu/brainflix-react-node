@@ -5,15 +5,14 @@ import { v4 as uid } from "uuid";
 
 // Receiving props from VideoDetials for comments array
 const CommentSection = (props) => {
+  const { comments } = props;
   return (
     <>
       <section className="comment-section">
-        <p className="comment-section__num-of">
-          {props.comments.length} Comments
-        </p>
+        <p className="comment-section__num-of">{comments.length} Comments</p>
         <CommentForm />
         <div className="comment-section__list">
-          {props.comments.map((comment) => {
+          {comments.map((comment) => {
             return (
               <CommentItem
                 key={uid()}

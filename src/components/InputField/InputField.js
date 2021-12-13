@@ -3,13 +3,8 @@ import "./InputField.scss";
 
 // Receiving props from Header or CommentForm
 const InputField = (props) => {
-  return (
-    <input
-      type={props.type}
-      placeholder={props.placeholder}
-      className={props.className}
-    />
-  );
+  const { type, placeholder, className } = props;
+  return <input type={type} placeholder={placeholder} className={className} />;
 };
 
 export default InputField;

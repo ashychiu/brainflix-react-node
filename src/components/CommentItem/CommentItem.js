@@ -5,6 +5,7 @@ import "./CommentItem.scss";
 
 // Receiving props from CommentSection for individual comments
 const CommentItem = (props) => {
+  const { name, timestamp, comment } = props;
   return (
     <>
       <article className="comment-item">
@@ -13,10 +14,10 @@ const CommentItem = (props) => {
         </div>
         <div className="comment-item__main-container">
           <div className="comment-item__top-container">
-            <p className="comment-item__name">{props.name}</p>
-            <p className="comment-item__date">{formatDate(props.timestamp)}</p>
+            <p className="comment-item__name">{name}</p>
+            <p className="comment-item__date">{formatDate(timestamp)}</p>
           </div>
-          <p className="comment-item__content">{props.comment}</p>
+          <p className="comment-item__content">{comment}</p>
         </div>
       </article>
       <hr />

@@ -3,9 +3,10 @@ import "./Button.scss";
 
 // Receiving props from UploadPage or Header or CommentForm
 const Button = (props) => {
+  const { id, onClick, placeholder } = props;
   return (
-    <button id={props.id} type="submit" onClick={props.onClick}>
-      {props.placeholder}
+    <button id={id} type="submit" onClick={onClick}>
+      {placeholder}
     </button>
   );
 };

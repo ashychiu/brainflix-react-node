@@ -3,13 +3,14 @@ import "./TextArea.scss";
 
 // Receiving props from UploadPage or CommentForm
 const TextArea = (props) => {
+  const { className, type, rows, placeholder } = props;
   return (
     <>
       <textarea
-        className={props.className}
-        type={props.type}
-        rows={props.rows}
-        placeholder={props.placeholder}
+        className={className}
+        type={type}
+        rows={rows}
+        placeholder={placeholder}
       ></textarea>
     </>
   );
