@@ -8,8 +8,8 @@ import "./UploadPage.scss";
 
 const UploadPage = (props) => {
   const handleVideoUpload = () => {
-    alert("Video uploaded sucessfully");
-    window.location.href = "/"; // onClick going to homepage since previous page maybe other videos
+    alert("Video uploaded sucessfully! \nClick OK to redirect to homepage.");
+    window.location.href = "/"; // going to homepage since previous page maybe other videos
   };
   return (
     <>

@@ -23,20 +23,22 @@ const CommentForm = () => {
                 className="comment-form__input-mobile"
                 type="textbox"
                 rows="5"
+                name="comment"
                 placeholder="Add a new comment"
               />
-            
-            {/* tablet/desktop comment form is text-input */}
-            <InputField
-              className="comment-form__input"
-              type="text"
-              placeholder="Add a new comment"
-            />
+
+              {/* tablet/desktop comment form is text-input */}
+              <InputField
+                className="comment-form__input"
+                type="text"
+                placeholder="Add a new comment"
+              />
+            </form>
           </div>
           <Button id="submitButton" placeholder="COMMENT" />
-        </div></form>
-      <hr />
+        </div>
       </div>
+      <hr />
     </>
   );
 };

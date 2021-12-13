@@ -1,7 +1,6 @@
 import VideoItem from "../VideoItem/VideoItem";
 import { NavLink } from "react-router-dom";
 import "./VideoNav.scss";
-import { v4 as uid } from "uuid";
 
 const VideoNav = (props) => {
   return (
@@ -9,9 +8,12 @@ const VideoNav = (props) => {
       <h2 className="video-nav__heading">NEXT VIDEOS</h2>
       {props.videos.map((video) => {
         return (
-          <NavLink to={`/videos/${video.id}`} className="video-nav__link">
+          <NavLink
+            to={`/videos/${video.id}`}
+            className="video-nav__link"
+            key={video.id}
+          >
             <VideoItem
-              key={video.id}
               id={video.id}
               title={video.title}
               channel={video.channel}

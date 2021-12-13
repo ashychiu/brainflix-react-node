@@ -70,9 +70,9 @@
 
 .upload-form__title {
   @extend .header__searchbar;
-  margin-bottom: 5px;
+  margin-bottom: 1rem;
   @include tablet {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
   }
   &::placeholder {
     background: none;
