@@ -36,9 +36,9 @@ class HomePage extends Component {
         });
         return videosList[0].id;
       })
-      .then((firstVideoId) => {
+      .then((defaultVideoId) => {
         const videoToLoadId =
-          selectedVideoId !== undefined ? selectedVideoId : firstVideoId;
+          selectedVideoId !== undefined ? selectedVideoId : defaultVideoId;
 
         this.fetchVideoDetails(videoToLoadId);
       });
@@ -59,21 +59,20 @@ class HomePage extends Component {
     const nextVideos = this.state.videosList.filter(
       (video) => video.id !== this.props.match.params.videoId
     );
-    console.log(this.props.match.params.videoId);
     return (
       <div className="brainflix">
         <Header />
         {this.state.selectedVideo ? (
           <VideoPlayer selectedVideo={this.state.selectedVideo} />
         ) : (
-          <p>Loading</p>
+          <p>Loading...</p>
         )}
 
         <div className="brainflix__container-desktop">
           {this.state.selectedVideo ? (
             <VideoDetails selectedVideo={this.state.selectedVideo} />
           ) : (
-            <p>Loading</p>
+            <p>Loading...</p>
           )}
           <VideoNav videos={nextVideos} />
         </div>
