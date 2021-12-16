@@ -22,7 +22,8 @@ class HomePage extends Component {
         this.setState({
           selectedVideo: videoDetails.data,
         });
-      });
+      })
+      .catch((err) => console.log(err));
   };
 
   componentDidMount() {
@@ -41,7 +42,8 @@ class HomePage extends Component {
           selectedVideoId !== undefined ? selectedVideoId : defaultVideoId;
 
         this.fetchVideoDetails(videoToLoadId);
-      });
+      })
+      .catch((err) => console.log(err));
   }
 
   componentDidUpdate(prevProps) {

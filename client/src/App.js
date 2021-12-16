@@ -6,15 +6,13 @@ import UploadPage from "./pages/UploadPage/UploadPage";
 
 const App = () => {
   return (
-    <div>
-      <BrowserRouter>
-        <Switch>
-          <Route path="/" exact component={HomePage} />
-          <Route path="/videos/:videoId" component={HomePage} />
-          <Route path="/upload" component={UploadPage} />
-        </Switch>
-      </BrowserRouter>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route path="/" exact component={HomePage} />
+        <Route path="/videos/:videoId" component={HomePage} />
+        <Route path="/upload" component={UploadPage} />
+      </Switch>
+    </BrowserRouter>
   );
 };
 
