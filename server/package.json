@@ -5,7 +5,8 @@
     "dotenv": "^10.0.0",
     "env": "^0.0.2",
     "express": "^4.17.1",
-    "fs": "^0.0.1-security"
+    "fs": "^0.0.1-security",
+    "uuid": "^8.3.2"
   },
   "name": "server",
   "version": "1.0.0",

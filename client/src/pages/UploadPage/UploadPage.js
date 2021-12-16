@@ -50,14 +50,14 @@ const UploadPage = (props) => {
           <Button
             id="publishButton"
             placeholder="PUBLISH"
-            onSubmit={() => {
+            onsubmit={() => {
               handleVideoUpload();
             }}
           />
           <Button
             id="cancelButton"
             placeholder="CANCEL"
-            onClick={() => props.history.goBack()} // onClick going back to previous page
+            onsubmit={() => props.history.goBack()} // onClick going back to previous page
           />
         </div>
       </div>

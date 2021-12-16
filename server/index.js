@@ -15,7 +15,7 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-// app.use("/videos", videosRouter);
+app.use("/videos", videosRouter);
 
 app.listen(PORT, () => {
   console.log(`Server listening on ${PORT}`);

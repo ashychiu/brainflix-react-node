@@ -17,7 +17,8 @@ class HomePage extends Component {
 
   fetchVideoDetails = (videoId) => {
     axios
-      .get(`${API_URL}/${videoId}?api_key=${API_KEY}`)
+      // ${API_URL}/${videoId}?api_key=${API_KEY}`
+      .get("http://localhost:8080/videos/:videoId")
       .then((videoDetails) => {
         this.setState({
           selectedVideo: videoDetails.data,
@@ -29,7 +30,7 @@ class HomePage extends Component {
   componentDidMount() {
     const selectedVideoId = this.props.match.params.videoId;
     axios
-      .get(`${API_URL}/?api_key=${API_KEY}`)
+      .get("http://localhost:8080/videos")
       .then((response) => {
         const videosList = response.data;
         this.setState({
