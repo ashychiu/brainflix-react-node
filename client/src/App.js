@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.scss";
-import HomePage from "./components/pages/HomePage/HomePage";
-import UploadPage from "./components/pages/UploadPage/UploadPage";
+import HomePage from "./pages/HomePage/HomePage";
+import UploadPage from "./pages/UploadPage/UploadPage";
 
 const App = () => {
   return (

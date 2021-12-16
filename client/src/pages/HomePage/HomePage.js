@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 import axios from "axios";
 import "./HomePage.scss";
-import Header from "../../Header/Header";
-import VideoNav from "../../VideoNav/VideoNav";
-import VideoDetails from "../../VideoDetails/VideoDetails";
-import VideoPlayer from "../../VideoPlayer/VideoPlayer";
+import Header from "../../components/Header/Header";
+import VideoNav from "../../components/VideoNav/VideoNav";
+import VideoDetails from "../../components/VideoDetails/VideoDetails";
+import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 
 const API_URL = "https://project-2-api.herokuapp.com/videos";
 const API_KEY = "af575ba7-79ad-496f-811f-613d4432aeef";
