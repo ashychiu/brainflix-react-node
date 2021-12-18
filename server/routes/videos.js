@@ -10,7 +10,7 @@ const readFile = () => {
 };
 
 const writeFile = (videoData) => {
-  fs.writeFileSync("/data/videos.json", JSON.stringify(videoData, null, 2));
+  fs.writeFileSync("./data/videos.json", JSON.stringify(videoData, null, 2));
 };
 
 router.get("/", (req, res) => {
@@ -69,29 +69,31 @@ router.post("/", (req, res) => {
     title: title,
     description: description,
     channel: "BrainStation",
-    image: "https://i.imgur.com/MMDMgD7.jpg",
-    views: "123,456",
-    likes: "98,765",
-    duration: "5:34",
+    image: "http://localhost:8080/images/default-video-poster.jpeg",
+    views: Math.ceil(Math.random() * 100000).toLocaleString(),
+    likes: Math.ceil(Math.random() * 100000).toLocaleString(),
+    duration: Math.ceil(Math.random()) + ":" + Math.ceil(Math.random() * 100),
     video: "https://project-2-api.herokuapp.com/stream",
-    timestamp: 1620850202000,
+    timestamp: Date.now(),
     comments: [
       {
-        name: "Anita Cage",
-        comment: "Everyone should watch this video. We’ll be using these tips!",
-        likes: 2,
-        timestamp: 1620983771000,
+        name: "Karina Shantanu",
+        comment:
+          "Everyone should watch this video. I enjoyed it so much and we’ll be using these tips!",
+        likes: Math.ceil(Math.random() * 100),
+        timestamp: Date.now(),
       },
       {
-        name: "Tamago Nakata",
+        name: "Prema Mared",
         comment:
-          "Great information all around! I’m saving this video to watch again the next time I head out of the country. Stay safe out there, folks.",
-        likes: 1,
-        timestamp: 1620930181000,
+          "Great information all around! I am sure everyone will learn something here. Stay safe out there, folks.",
+        likes: Math.ceil(Math.random() * 100),
+        timestamp: Date.now(),
       },
     ],
   };
 
+  // return res.status(201).send(newVideo);
   const videoData = readFile();
   videoData.push(newVideo);
   writeFile(videoData);

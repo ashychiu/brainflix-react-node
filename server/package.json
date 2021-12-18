@@ -19,6 +19,12 @@
     "start": "node index.js",
     "watch": "nodemon index.js"
   },
+  "nodemonConfig": {
+    "ignore": [
+      "data/*",
+      "./videos.json"
+    ]
+  },
   "author": "",
   "license": "ISC",
   "description": ""
