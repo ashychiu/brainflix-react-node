@@ -33,7 +33,6 @@ class HomePage extends Component {
       .get("http://localhost:8080/videos")
       .then((response) => {
         const videosList = response.data;
-        console.log(videosList);
         this.setState({
           videosList: videosList,
         });

@@ -276,106 +276,54 @@
     "id": "76ca28c0-7dea-4553-887f-8e5129a80fc3"
   },
   {
-    "id": "e73a97b9-d5ce-4465-9dbc-00ecc16d3f69",
-    "title": "Testing again for image",
-    "description": "Personality blends are a combination of the individual’s top two dominant personality types, Like individual personality types, blends can be used to predict preferences, strengths and compatibility. ",
+    "id": "f22dbf40-6427-426c-b2f1-7a33da0700ff",
+    "title": "Learn to build an e-Commerce App!",
+    "description": "Are you building an e-Commerce platform for your enterprise? Let us show you why you should build it on Astra DB. We will take you on a journey with one session per month and teach you how to design high-performing Cassandra data models to provide the best user experience for your customers. We will break down and step through common retail use cases and solutions, with each session building on the lessons learned from the last. In the first of multiple sessions we will focus on implementing models and services for Product Pricing and Category Navigation. Come join us and learn how to build top-notch E-tail data services!",
     "channel": "BrainStation",
     "image": "http://localhost:8080/images/default-video-poster.jpeg",
-    "views": "64,224",
-    "likes": "20,664",
-    "duration": "5:34",
+    "views": "71,223",
+    "likes": "28,806",
+    "duration": "1:74",
     "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1639703111162,
+    "timestamp": 1639822904455,
     "comments": [
       {
         "name": "Karina Shantanu",
         "comment": "Everyone should watch this video. I enjoyed it so much and we’ll be using these tips!",
-        "likes": 2,
-        "timestamp": 1639703111162
+        "likes": 43,
+        "timestamp": 1639822904455
       },
       {
         "name": "Prema Mared",
         "comment": "Great information all around! I am sure everyone will learn something here. Stay safe out there, folks.",
-        "likes": 1,
-        "timestamp": 1639703111162
+        "likes": 6,
+        "timestamp": 1639822904455
       }
     ]
   },
   {
-    "id": "3d851614-6402-480c-a3cd-fb26af372705",
-    "title": "Testing for time duration",
-    "description": "Personality blends are a combination of the individual’s top two dominant personality types, Like individual personality types, blends can be used to predict preferences, strengths and compatibility. ",
+    "id": "5f67267b-e92c-4789-bc63-57f31d768f4a",
+    "title": "Gatsby's House 2022",
+    "description": "So don't miss out on Vancouver's premier New Year's Eve countdown experience that is only for the Movers & Shakers - Gatsby's House NYE. For more information about this event with exclusive deals on table service, group rates & promo pricing",
     "channel": "BrainStation",
     "image": "http://localhost:8080/images/default-video-poster.jpeg",
-    "views": "58,306",
-    "likes": "40,426",
-    "duration": "1:5",
+    "views": "75,358",
+    "likes": "63,711",
+    "duration": "1:94",
     "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1639704047602,
+    "timestamp": 1639823154201,
     "comments": [
       {
         "name": "Karina Shantanu",
         "comment": "Everyone should watch this video. I enjoyed it so much and we’ll be using these tips!",
-        "likes": 2,
-        "timestamp": 1639704047602
+        "likes": 28,
+        "timestamp": 1639823154201
       },
       {
         "name": "Prema Mared",
         "comment": "Great information all around! I am sure everyone will learn something here. Stay safe out there, folks.",
-        "likes": 1,
-        "timestamp": 1639704047602
-      }
-    ]
-  },
-  {
-    "id": "5c784d1c-6ecd-4e03-8745-5dff11d00821",
-    "title": "Testing for time duration 2",
-    "description": "Personality blends are a combination of the individual’s top two dominant personality types, Like individual personality types, blends can be used to predict preferences, strengths and compatibility. ",
-    "channel": "BrainStation",
-    "image": "http://localhost:8080/images/default-video-poster.jpeg",
-    "views": "93,448",
-    "likes": "56,164",
-    "duration": "1:29",
-    "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1639704329586,
-    "comments": [
-      {
-        "name": "Karina Shantanu",
-        "comment": "Everyone should watch this video. I enjoyed it so much and we’ll be using these tips!",
-        "likes": 2,
-        "timestamp": 1639704329586
-      },
-      {
-        "name": "Prema Mared",
-        "comment": "Great information all around! I am sure everyone will learn something here. Stay safe out there, folks.",
-        "likes": 1,
-        "timestamp": 1639704329586
-      }
-    ]
-  },
-  {
-    "id": "c731a062-12f2-4ff3-a8aa-618db5e1f654",
-    "title": "testing title",
-    "description": "testing description",
-    "channel": "BrainStation",
-    "image": "http://localhost:8080/images/default-video-poster.jpeg",
-    "views": "70,222",
-    "likes": "53,994",
-    "duration": "1:40",
-    "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1639820722704,
-    "comments": [
-      {
-        "name": "Karina Shantanu",
-        "comment": "Everyone should watch this video. I enjoyed it so much and we’ll be using these tips!",
-        "likes": 17,
-        "timestamp": 1639820722704
-      },
-      {
-        "name": "Prema Mared",
-        "comment": "Great information all around! I am sure everyone will learn something here. Stay safe out there, folks.",
-        "likes": 84,
-        "timestamp": 1639820722704
+        "likes": 34,
+        "timestamp": 1639823154201
       }
     ]
   }

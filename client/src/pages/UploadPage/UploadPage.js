@@ -12,14 +12,18 @@ import axios from "axios";
 const UploadPage = (props) => {
   const handleVideoUpload = (e) => {
     e.preventDefault();
-    console.log(e.target.title.value);
-    console.log(e.target.description.value);
-    axios.post("http://localhost:8080/videos", {
-      title: `${e.target.title.value}`,
-      description: `${e.target.description.value}`,
-    });
-    alert("Video uploaded sucessfully! \nClick OK to redirect to homepage.");
-    window.location.href = "/"; // going to homepage since previous page maybe other videos
+    let title = e.target.title.value;
+    let description = e.target.description.value;
+    if (title && description) {
+      axios.post("http://localhost:8080/videos", {
+        title: `${title}`,
+        description: `${description}`,
+      });
+      alert("Video uploaded sucessfully! \nClick OK to return to homepage.");
+      window.location.href = "/"; // go back to homepage
+    } else {
+      alert("Please include both title & description"); // form validation
+    }
   };
   return (
     <>
@@ -60,10 +64,8 @@ const UploadPage = (props) => {
             <div className="upload-page__button-container">
               <Button id="publishButton" placeholder="PUBLISH" />
               {/* styling stored at button.scss */}
-              <div id="cancelButton">
-                <Link to="/" className="upload-page__cancel">
-                  <p>CANCEL</p>
-                </Link>
+              <div id="cancelButton" onClick={() => props.history.goBack()}>
+                <p>CANCEL</p>
               </div>
             </div>
           </div>

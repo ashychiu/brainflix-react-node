@@ -65,7 +65,6 @@ router.post("/", (req, res) => {
   }
   const { title, description } = req.body;
   const newVideo = {
-    id: uuid(),
     title: title,
     description: description,
     channel: "BrainStation",
@@ -79,7 +78,7 @@ router.post("/", (req, res) => {
       {
         name: "Karina Shantanu",
         comment:
-          "Everyone should watch this video. I enjoyed it so much and we’ll be using these tips!",
+          "I just wanna say thank you for your efforts in these videos. They help me so much while I'm studying. You're awesome and so are your vidoes!",
         likes: Math.ceil(Math.random() * 100),
         timestamp: Date.now(),
       },
@@ -91,6 +90,7 @@ router.post("/", (req, res) => {
         timestamp: Date.now(),
       },
     ],
+    id: uuid(),
   };
 
   // return res.status(201).send(newVideo);
