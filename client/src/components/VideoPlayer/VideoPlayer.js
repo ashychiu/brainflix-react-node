@@ -3,10 +3,14 @@ import "./VideoPlayer.scss";
 
 // Receiving props from HomePage for selectedVideo to display
 const VideoPlayer = (props) => {
-  const { image } = props.selectedVideo;
+  const { image, video, id } = props.selectedVideo;
+  const API_KEY = "af575ba7-79ad-496f-811f-613d4432aeef";
+
   return (
     <>
-      <video className="video-details__player" controls poster={image}></video>
+      <video key={id} className="video-details__player" controls poster={image}>
+        <source src={`${video}?api_key=${API_KEY}`} />
+      </video>
     </>
   );
 };
