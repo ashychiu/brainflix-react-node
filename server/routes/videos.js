@@ -1,6 +1,5 @@
 const express = require("express");
 const router = express.Router();
-const axios = require("axios");
 const { v4: uuid } = require("uuid");
 const fs = require("fs");
 
@@ -30,38 +29,11 @@ router.get("/:videoId", (req, res) => {
   return res.status(200).json(video);
 });
 
-// {
-//     "title": "Travel Health Useful Medical Information For",
-//     "channel": "Glen Harper",
-//     "image": "https://i.imgur.com/MMDMgD7.jpg",
-//     "description": "Concerned about your health while travelling? You should know that international travellers should always be extra concerned about their health and safety. This video provides essential information on travel health risks and preventive measures to keep you and your loved ones safe during your travels.",
-//     "views": "739,945",
-//     "likes": "98,352",
-//     "duration": "8:34",
-//     "video": "https://project-2-api.herokuapp.com/stream",
-//     "timestamp": 1620850202000,
-//     "comments": [
-//       {
-//         "name": "Aurora Anita",
-//         "comment": "This video is SO important for anybody wishing to travel overseas. We’ll be using these tips on our trips!",
-//         "likes": 2,
-//         "timestamp": 1620983771000
-//       },
-//       {
-//         "name": "Joan Hidaka",
-//         "comment": "Great information all around! I’m saving this video to watch again the next time I head out of the country. Stay safe out there, folks.",
-//         "likes": 1,
-//         "timestamp": 1620930181000
-//       }
-//     ],
-//     "id": "b6f35f03-7936-409b-bd2a-446bcc5f30e7"
-// }
-
 router.post("/", (req, res) => {
   if (!req.body.title || !req.body.description) {
     return res
       .status(400)
-      .send("Must include title and description of the video");
+      .send("Must include both title and description of the video");
   }
   const { title, description } = req.body;
   const newVideo = {
@@ -79,21 +51,21 @@ router.post("/", (req, res) => {
         name: "Karina Shantanu",
         comment:
           "I just wanna say thank you for your efforts in these videos. They help me so much while I'm studying. You're awesome and so are your vidoes!",
-        likes: Math.ceil(Math.random() * 100),
+        likes: Math.ceil(Math.random() * 10),
         timestamp: Date.now(),
       },
       {
         name: "Prema Mared",
         comment:
           "Great information all around! I am sure everyone will learn something here. Stay safe out there, folks.",
-        likes: Math.ceil(Math.random() * 100),
+        likes: Math.ceil(Math.random() * 10),
         timestamp: Date.now(),
       },
     ],
     id: uuid(),
   };
 
-  // return res.status(201).send(newVideo);
+  return res.status(201).send(newVideo);
   const videoData = readFile();
   videoData.push(newVideo);
   writeFile(videoData);

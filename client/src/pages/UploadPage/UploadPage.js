@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header";
 import InputField from "../../components/InputField/InputField";
 import TextArea from "../../components/TextArea/TextArea";
@@ -15,7 +14,7 @@ const UploadPage = (props) => {
     let title = e.target.title.value;
     let description = e.target.description.value;
     if (title && description) {
-      axios.post("http://localhost:8080/videos", {
+      axios.post(`${process.env.REACT_APP_API_URL}/videos`, {
         title: `${title}`,
         description: `${description}`,
       });
@@ -59,9 +58,9 @@ const UploadPage = (props) => {
               placeholder="Add a description to your video"
             />
           </div>
-          <div className="upload-page__bottom-container">
-            <hr className="upload-page__divider-tab-desk" />
-            <div className="upload-page__button-container">
+          <div className="upload-form__bottom-container">
+            <hr className="upload-form__divider-tab-desk" />
+            <div className="upload-form__button-container">
               <Button id="publishButton" placeholder="PUBLISH" />
               {/* styling stored at button.scss */}
               <div id="cancelButton" onClick={() => props.history.goBack()}>

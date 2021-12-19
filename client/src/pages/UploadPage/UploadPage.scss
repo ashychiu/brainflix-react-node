@@ -21,24 +21,6 @@
       margin: 1.5rem 0;
     }
   }
-
-  &__divider-tab-desk {
-    display: none;
-    @include tablet {
-      display: block;
-      margin: 1rem 0;
-    }
-  }
-  &__button-container {
-    display: flex;
-    flex-direction: column;
-    @include tablet {
-      flex-direction: row-reverse;
-    }
-  }
-  &__cancel {
-    color: $primary-blue;
-  }
 }
 .upload-form {
   display: flex;
@@ -47,13 +29,18 @@
     margin-top: 1.75rem;
   }
   @include desktop {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     margin-bottom: 2.25rem;
+    flex-wrap: wrap;
   }
   &__input-container {
     width: 100%;
     flex-grow: 2;
+    @include desktop {
+      width: 50%;
+      flex-grow: 0;
+    }
   }
   &__thumb-container {
     width: 100%;
@@ -62,14 +49,7 @@
       width: 50%;
     }
     @include desktop {
-      width: 60%;
-    }
-  }
-  &__bottom-container {
-    @include desktop {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
+      width: 40%;
     }
   }
   &__thumb {
@@ -83,6 +63,26 @@
     @include desktop {
       width: 90%;
       margin-bottom: 0;
+    }
+  }
+  &__bottom-container {
+    @include desktop {
+      flex-basis: 100%;
+    }
+  }
+
+  &__divider-tab-desk {
+    display: none;
+    @include tablet {
+      display: block;
+      margin: 1rem 0;
+    }
+  }
+  &__button-container {
+    display: flex;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row-reverse;
     }
   }
 }
