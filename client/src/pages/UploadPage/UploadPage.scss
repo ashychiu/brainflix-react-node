@@ -21,6 +21,13 @@
       margin: 1.5rem 0;
     }
   }
+  &__divider-tab-desk {
+    display: none;
+    @include tablet {
+      display: block;
+      margin: 1rem 0;
+    }
+  }
 }
 .upload-form {
   display: flex;
