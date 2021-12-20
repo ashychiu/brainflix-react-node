@@ -3,7 +3,7 @@ import CommentForm from "../CommentForm/CommentForm";
 import "./CommentSection.scss";
 import { v4 as uid } from "uuid";
 
-// Receiving props from VideoDetials for comments array
+//Comment section in video details, receiving props from VideoDetials
 const CommentSection = (props) => {
   const { comments } = props;
   return (

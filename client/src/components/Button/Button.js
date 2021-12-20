@@ -1,7 +1,7 @@
 import React from "react";
 import "./Button.scss";
 
-// Receiving props from UploadPage or Header or CommentForm
+// Submit button, receiving props from UploadPage or Header or CommentForm
 const Button = (props) => {
   const { id, onSubmit, placeholder } = props;
   return (

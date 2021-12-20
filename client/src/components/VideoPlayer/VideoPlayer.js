@@ -4,7 +4,7 @@ import "./VideoPlayer.scss";
 const API_URL = process.env.REACT_APP_API_URL;
 const defaultImage = `${API_URL}/images/Upload-video-preview.jpg`;
 
-// Receiving props from HomePage for selectedVideo to display
+// Video Player: receiving props from HomePage for selectedVideo to display
 const VideoPlayer = (props) => {
   const { image, video, id } = props.selectedVideo;
   const videoImage = image ? image : defaultImage;

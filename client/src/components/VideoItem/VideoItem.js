@@ -3,7 +3,8 @@ import "./VideoItem.scss";
 const API_URL = process.env.REACT_APP_API_URL;
 const defaultImage = `${API_URL}/images/Upload-video-preview.jpg`;
 
-// Receiving props from VideoNav for indivdual videos
+// Individual video item, receiving props from VideoNav
+
 const VideoItem = (props) => {
   const { title, image, channel } = props;
   const videoThumb = image ? image : defaultImage;

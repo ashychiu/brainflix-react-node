@@ -3,7 +3,6 @@ import Header from "../../components/Header/Header";
 import InputField from "../../components/InputField/InputField";
 import TextArea from "../../components/TextArea/TextArea";
 import Button from "../../components/Button/Button";
-// import videopreview from "../../assets/images/Upload-video-preview.jpg";
 import "./UploadPage.scss";
 import axios from "axios";
 

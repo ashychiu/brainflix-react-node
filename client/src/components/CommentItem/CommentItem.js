@@ -1,12 +1,11 @@
 import formatDate from "../../utils/formatDate";
 import Avatar from "../Avatar/Avatar";
-// import placeholder from "../../assets/images/placeholder.jpg";
 import "./CommentItem.scss";
 
 const API_URL = process.env.REACT_APP_API_URL;
 const placeholder = `${API_URL}/images/placeholder.jpg`;
 
-// Receiving props from CommentSection for individual comments
+// Individual comments, receiving props from CommentSection
 const CommentItem = (props) => {
   const { name, timestamp, comment } = props;
   return (

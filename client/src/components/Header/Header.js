@@ -1,10 +1,11 @@
 import React from "react";
 import logo from "../../assets/logo/BrainFlix-logo.svg";
 import Avatar from "../Avatar/Avatar";
-// import mohan from "../../assets/images/Mohan-muruge.jpg";
 import "./Header.scss";
 import InputField from "../InputField/InputField";
 import { Link } from "react-router-dom";
+
+//Header section for HomePage & UploadPage
 
 const API_URL = process.env.REACT_APP_API_URL;
 const avatar = `${API_URL}/images/Mohan-muruge.jpg`;

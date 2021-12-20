@@ -1,7 +1,6 @@
 import React from "react";
 import Button from "../Button/Button";
 import Avatar from "../Avatar/Avatar";
-// import mohan from "../../assets/images/Mohan-muruge.jpg";
 import InputField from "../InputField/InputField";
 import TextArea from "../TextArea/TextArea";
 import "./CommentForm.scss";
@@ -9,6 +8,7 @@ import "./CommentForm.scss";
 const API_URL = process.env.REACT_APP_API_URL;
 const avatar = `${API_URL}/images/Mohan-muruge.jpg`;
 
+// Input form in comment section of video details
 const CommentForm = () => {
   return (
     <>
