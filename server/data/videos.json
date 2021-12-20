@@ -276,55 +276,29 @@
     "id": "76ca28c0-7dea-4553-887f-8e5129a80fc3"
   },
   {
-    "title": "Project Overview",
-    "description": "Great work! So far everything is going as planned, however, the decision has been made to build out an actual API for the prototype and move away from using the mock API. The team at BrainFlix is confident in your ability to build out this new API, and have tasked you to develop it for this final sprint.\n\nUsing the mock API as your guide, build out your own API service that will manage the video data, and update the client application to use your API service.",
+    "title": "test",
+    "description": "test",
     "channel": "BrainStation",
-    "image": "",
-    "views": "64,703",
-    "likes": "87,785",
-    "duration": "1:97",
+    "image": null,
+    "views": "87,511",
+    "likes": "28,674",
+    "duration": "1:36",
     "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1639978480020,
+    "timestamp": 1639985040874,
     "comments": [
       {
         "name": "Karina Shantanu",
         "comment": "I just wanna say thank you for your efforts in these videos. They help me so much while I'm studying. You're awesome and so are your vidoes!",
-        "likes": 1,
-        "timestamp": 1639978480020
+        "likes": 2,
+        "timestamp": 1639985040874
       },
       {
         "name": "Prema Mared",
         "comment": "Great information all around! I am sure everyone will learn something here. Stay safe out there, folks.",
-        "likes": 6,
-        "timestamp": 1639978480020
-      }
-    ],
-    "id": "e4d5ab24-b716-48c2-b2d6-78019a5940e0"
-  },
-  {
-    "title": "Functional Requirements",
-    "description": "API Server\nThe end-points and response structure of your API server must match that of the mock API server.\nThe API must have the following end-points:\nGET /videos that responds with an array of videos.\nGET /videos/:id that responds with an object containing the details of the video with an id of :id.\nPOST /videos that will add a new video to the video list. A unique id must be generated for each video added.\nSubmitting a new video from the form must POST to the API. There is no requirement for a user to upload the image, therefore you as the developer must provide the hard-coded image path for the video thumbnail on the front-end during the form submission within the request body.",
-    "channel": "BrainStation",
-    "image": "",
-    "views": "49,371",
-    "likes": "44,406",
-    "duration": "1:29",
-    "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1639979667353,
-    "comments": [
-      {
-        "name": "Karina Shantanu",
-        "comment": "I just wanna say thank you for your efforts in these videos. They help me so much while I'm studying. You're awesome and so are your vidoes!",
         "likes": 4,
-        "timestamp": 1639979667353
-      },
-      {
-        "name": "Prema Mared",
-        "comment": "Great information all around! I am sure everyone will learn something here. Stay safe out there, folks.",
-        "likes": 3,
-        "timestamp": 1639979667353
+        "timestamp": 1639985040874
       }
     ],
-    "id": "80a41b68-28c5-4392-8d1f-89083c6650ec"
+    "id": "4e3ed923-b0ed-4a55-9582-774b102e727a"
   }
 ]

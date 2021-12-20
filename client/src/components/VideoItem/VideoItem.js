@@ -1,5 +1,4 @@
 import "./VideoItem.scss";
-// import defaultImage from "../../assets/images/Upload-video-preview.jpg";
 
 const API_URL = process.env.REACT_APP_API_URL;
 const defaultImage = `${API_URL}/images/Upload-video-preview.jpg`;
