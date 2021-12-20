@@ -1,5 +1,5 @@
 const express = require("express");
-const router = express.Router();
+const videosRouter = express.Router();
 const { v4: uuid } = require("uuid");
 const fs = require("fs");
 
@@ -13,7 +13,7 @@ const writeFile = (videoData) => {
 };
 
 //Return only the needed keys for videosList
-router.get("/", (req, res) => {
+videosRouter.get("/", (req, res) => {
   let videoData = readFile();
   videosList = videoData.map((video) => ({
     id: video.id,
@@ -25,7 +25,7 @@ router.get("/", (req, res) => {
 });
 
 //Match the params.videoId with the data using .find()
-router.get("/:videoId", (req, res) => {
+videosRouter.get("/:videoId", (req, res) => {
   let videoData = readFile();
   const video = videoData.find((video) => video.id === req.params.videoId);
 
@@ -36,7 +36,7 @@ router.get("/:videoId", (req, res) => {
   return res.status(200).json(video);
 });
 
-router.post("/", (req, res) => {
+videosRouter.post("/", (req, res) => {
   if (!req.body.title || !req.body.description) {
     return res
       .status(400)
@@ -85,4 +85,4 @@ router.post("/", (req, res) => {
   return res.status(201).json(newVideo);
 });
 
-module.exports = router;
+module.exports = videosRouter;
