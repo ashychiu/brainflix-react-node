@@ -1,18 +1,20 @@
+import React from "react";
 import Button from "../Button/Button";
 import Avatar from "../Avatar/Avatar";
-import mohan from "../../assets/images/Mohan-muruge.jpg";
+// import mohan from "../../assets/images/Mohan-muruge.jpg";
 import InputField from "../InputField/InputField";
 import TextArea from "../TextArea/TextArea";
 import "./CommentForm.scss";
 
-import React from "react";
+const API_URL = process.env.REACT_APP_API_URL;
+const avatar = `${API_URL}/images/Mohan-muruge.jpg`;
 
 const CommentForm = () => {
   return (
     <>
       <div className="comment-form__container">
         <div className="comment-form__avatar-container">
-          <Avatar className="comment-form__avatar" src={mohan} />
+          <Avatar className="comment-form__avatar" src={avatar} />
         </div>
         <div className="comment-form__input-container">
           <div className="comment-form__input-container-tab-desk">

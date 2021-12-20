@@ -3,10 +3,12 @@ import Header from "../../components/Header/Header";
 import InputField from "../../components/InputField/InputField";
 import TextArea from "../../components/TextArea/TextArea";
 import Button from "../../components/Button/Button";
-import videopreview from "../../assets/images/Upload-video-preview.jpg";
+// import videopreview from "../../assets/images/Upload-video-preview.jpg";
 import "./UploadPage.scss";
 import axios from "axios";
+
 const API_URL = process.env.REACT_APP_API_URL;
+const defaultImage = `${API_URL}/images/Upload-video-preview.jpg`;
 
 // Receiving props from browser
 const UploadPage = (props) => {
@@ -19,7 +21,6 @@ const UploadPage = (props) => {
         title: `${title}`,
         description: `${description}`,
       });
-      console.log(title, description);
       alert("Video uploaded sucessfully! \nClick OK to return to homepage.");
       window.location.href = "/"; // go back to homepage
     } else {
@@ -33,13 +34,12 @@ const UploadPage = (props) => {
       <div className="upload-page__container">
         <h2 className="upload-page__title">Upload Video</h2>
         <hr className="upload-page__divider-tab-desk" />
-        {/* <div className="upload-page__form-container"> */}
         <form className="upload-form" onSubmit={handleVideoUpload}>
           <div className="upload-form__thumb-container">
             <label>VIDEO THUMBNAIL</label>
             <img
               className="upload-form__thumb"
-              src={videopreview}
+              src={defaultImage}
               alt="Video Thumbnail"
             />
           </div>

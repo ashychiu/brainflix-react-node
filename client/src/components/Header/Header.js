@@ -1,10 +1,13 @@
 import React from "react";
 import logo from "../../assets/logo/BrainFlix-logo.svg";
 import Avatar from "../Avatar/Avatar";
-import mohan from "../../assets/images/Mohan-muruge.jpg";
+// import mohan from "../../assets/images/Mohan-muruge.jpg";
 import "./Header.scss";
 import InputField from "../InputField/InputField";
 import { Link } from "react-router-dom";
+
+const API_URL = process.env.REACT_APP_API_URL;
+const avatar = `${API_URL}/images/Mohan-muruge.jpg`;
 
 const Header = () => {
   return (
@@ -22,7 +25,7 @@ const Header = () => {
             placeholder="Search"
           />
           {/* mobile version avatar position is in the middle */}
-          <Avatar className="header__avatar-mobile" src={mohan} />
+          <Avatar className="header__avatar-mobile" src={avatar} />
         </div>
         {/* styling stored at button.scss */}
         <div id="uploadButton">
@@ -32,7 +35,7 @@ const Header = () => {
         </div>
 
         {/* tablet/desktop version avatar is at the end*/}
-        <Avatar className="header__avatar-tab-desk" src={mohan} />
+        <Avatar className="header__avatar-tab-desk" src={avatar} />
       </div>
     </header>
   );

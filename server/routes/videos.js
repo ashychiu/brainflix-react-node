@@ -39,7 +39,7 @@ router.post("/", (req, res) => {
     title: title,
     description: description,
     channel: "BrainStation",
-    image: "",
+    image: "http://localhost:8080/images/default-video-poster.jpeg",
     views: Math.ceil(Math.random() * 100000).toLocaleString(),
     likes: Math.ceil(Math.random() * 100000).toLocaleString(),
     duration: Math.ceil(Math.random()) + ":" + Math.ceil(Math.random() * 100),
@@ -64,7 +64,7 @@ router.post("/", (req, res) => {
     id: uuid(),
   };
 
-  // return res.status(201).send(newVideo);
+  return res.status(201).send(newVideo);
   const videoData = readFile();
   videoData.push(newVideo);
   writeFile(videoData);
