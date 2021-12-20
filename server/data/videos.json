@@ -276,159 +276,29 @@
     "id": "76ca28c0-7dea-4553-887f-8e5129a80fc3"
   },
   {
-    "id": "f22dbf40-6427-426c-b2f1-7a33da0700ff",
-    "title": "Learn to build an e-Commerce App!",
-    "description": "Are you building an e-Commerce platform for your enterprise? Let us show you why you should build it on Astra DB. We will take you on a journey with one session per month and teach you how to design high-performing Cassandra data models to provide the best user experience for your customers. We will break down and step through common retail use cases and solutions, with each session building on the lessons learned from the last. In the first of multiple sessions we will focus on implementing models and services for Product Pricing and Category Navigation. Come join us and learn how to build top-notch E-tail data services!",
+    "title": "Project Overview",
+    "description": "Great work! So far everything is going as planned, however, the decision has been made to build out an actual API for the prototype and move away from using the mock API. The team at BrainFlix is confident in your ability to build out this new API, and have tasked you to develop it for this final sprint.\n\nUsing the mock API as your guide, build out your own API service that will manage the video data, and update the client application to use your API service.",
     "channel": "BrainStation",
-    "image": "http://localhost:8080/images/default-video-poster.jpeg",
-    "views": "71,223",
-    "likes": "28,806",
-    "duration": "1:74",
+    "image": "",
+    "views": "64,703",
+    "likes": "87,785",
+    "duration": "1:97",
     "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1639822904455,
+    "timestamp": 1639978480020,
     "comments": [
       {
         "name": "Karina Shantanu",
-        "comment": "Everyone should watch this video. I enjoyed it so much and we’ll be using these tips!",
-        "likes": 43,
-        "timestamp": 1639822904455
+        "comment": "I just wanna say thank you for your efforts in these videos. They help me so much while I'm studying. You're awesome and so are your vidoes!",
+        "likes": 1,
+        "timestamp": 1639978480020
       },
       {
         "name": "Prema Mared",
         "comment": "Great information all around! I am sure everyone will learn something here. Stay safe out there, folks.",
         "likes": 6,
-        "timestamp": 1639822904455
-      }
-    ]
-  },
-  {
-    "id": "5f67267b-e92c-4789-bc63-57f31d768f4a",
-    "title": "Gatsby's House 2022",
-    "description": "So don't miss out on Vancouver's premier New Year's Eve countdown experience that is only for the Movers & Shakers - Gatsby's House NYE. For more information about this event with exclusive deals on table service, group rates & promo pricing",
-    "channel": "BrainStation",
-    "image": "http://localhost:8080/images/default-video-poster.jpeg",
-    "views": "75,358",
-    "likes": "63,711",
-    "duration": "1:94",
-    "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1639823154201,
-    "comments": [
-      {
-        "name": "Karina Shantanu",
-        "comment": "Everyone should watch this video. I enjoyed it so much and we’ll be using these tips!",
-        "likes": 28,
-        "timestamp": 1639823154201
-      },
-      {
-        "name": "Prema Mared",
-        "comment": "Great information all around! I am sure everyone will learn something here. Stay safe out there, folks.",
-        "likes": 34,
-        "timestamp": 1639823154201
-      }
-    ]
-  },
-  {
-    "title": "4520883013877669",
-    "description": "4520883013877669",
-    "channel": "BrainStation",
-    "image": "http://localhost:8080/images/default-video-poster.jpeg",
-    "views": "15,164",
-    "likes": "47,248",
-    "duration": "1:76",
-    "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1639947693532,
-    "comments": [
-      {
-        "name": "Karina Shantanu",
-        "comment": "I just wanna say thank you for your efforts in these videos. They help me so much while I'm studying. You're awesome and so are your vidoes!",
-        "likes": 87,
-        "timestamp": 1639947693532
-      },
-      {
-        "name": "Prema Mared",
-        "comment": "Great information all around! I am sure everyone will learn something here. Stay safe out there, folks.",
-        "likes": 22,
-        "timestamp": 1639947693532
+        "timestamp": 1639978480020
       }
     ],
-    "id": "efb3249e-6c50-4626-ba46-0f541c0066d6"
-  },
-  {
-    "title": "but when i compare to Daniil’s demo on the braingames, the .json file at server is relative path",
-    "description": "but when i compare to Daniil’s demo on the braingames, the .json file at server is relative path",
-    "channel": "BrainStation",
-    "image": "http://localhost:8080/images/default-video-poster.jpeg",
-    "views": "83,139",
-    "likes": "60,522",
-    "duration": "1:23",
-    "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1639950502810,
-    "comments": [
-      {
-        "name": "Karina Shantanu",
-        "comment": "I just wanna say thank you for your efforts in these videos. They help me so much while I'm studying. You're awesome and so are your vidoes!",
-        "likes": 50,
-        "timestamp": 1639950502810
-      },
-      {
-        "name": "Prema Mared",
-        "comment": "Great information all around! I am sure everyone will learn something here. Stay safe out there, folks.",
-        "likes": 38,
-        "timestamp": 1639950502810
-      }
-    ],
-    "id": "c1f0d64f-66bb-41b8-8105-30c56479fd5e"
-  },
-  {
-    "title": "龍蝦荷香珍珠飯套餐 $188",
-    "description": "①-⑧套餐可自選以下3款精美小菜，第⑦个套餐除外",
-    "channel": "BrainStation",
-    "image": "http://localhost:8080/images/default-video-poster.jpeg",
-    "views": "64,037",
-    "likes": "43,360",
-    "duration": "1:41",
-    "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1639950666163,
-    "comments": [
-      {
-        "name": "Karina Shantanu",
-        "comment": "I just wanna say thank you for your efforts in these videos. They help me so much while I'm studying. You're awesome and so are your vidoes!",
-        "likes": 17,
-        "timestamp": 1639950666163
-      },
-      {
-        "name": "Prema Mared",
-        "comment": "Great information all around! I am sure everyone will learn something here. Stay safe out there, folks.",
-        "likes": 34,
-        "timestamp": 1639950666163
-      }
-    ],
-    "id": "2ba35d17-1c69-4199-b12f-b6932c0ff8d2"
-  },
-  {
-    "title": "①-⑧套餐可自選以下3款精美小菜，第⑦个套餐除外",
-    "description": "①-⑧套餐可自選以下3款精美小菜，第⑦个套餐除外",
-    "channel": "BrainStation",
-    "image": "http://localhost:8080/images/default-video-poster.jpeg",
-    "views": "51,215",
-    "likes": "73,069",
-    "duration": "1:97",
-    "video": "https://project-2-api.herokuapp.com/stream",
-    "timestamp": 1639950684964,
-    "comments": [
-      {
-        "name": "Karina Shantanu",
-        "comment": "I just wanna say thank you for your efforts in these videos. They help me so much while I'm studying. You're awesome and so are your vidoes!",
-        "likes": 3,
-        "timestamp": 1639950684964
-      },
-      {
-        "name": "Prema Mared",
-        "comment": "Great information all around! I am sure everyone will learn something here. Stay safe out there, folks.",
-        "likes": 51,
-        "timestamp": 1639950684964
-      }
-    ],
-    "id": "f039daa0-40bf-4167-839e-dd1e7ad0aa5c"
+    "id": "e4d5ab24-b716-48c2-b2d6-78019a5940e0"
   }
 ]

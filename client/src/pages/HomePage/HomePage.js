@@ -6,8 +6,7 @@ import VideoNav from "../../components/VideoNav/VideoNav";
 import VideoDetails from "../../components/VideoDetails/VideoDetails";
 import VideoPlayer from "../../components/VideoPlayer/VideoPlayer";
 
-// const API_URL = "https://project-2-api.herokuapp.com/videos";
-// const API_KEY = "af575ba7-79ad-496f-811f-613d4432aeef";
+const API_URL = process.env.REACT_APP_API_URL;
 
 class HomePage extends Component {
   state = {
@@ -17,7 +16,7 @@ class HomePage extends Component {
 
   fetchVideoDetails = (videoId) => {
     axios
-      .get(`http://localhost:8080/videos/${videoId}`)
+      .get(`${API_URL}/videos/${videoId}`)
       .then((videoDetails) => {
         this.setState({
           selectedVideo: videoDetails.data,
@@ -29,7 +28,7 @@ class HomePage extends Component {
   componentDidMount() {
     const selectedVideoId = this.props.match.params.videoId;
     axios
-      .get(`${process.env.REACT_APP_API_URL}/videos`)
+      .get(`${API_URL}/videos`)
       .then((response) => {
         const videosList = response.data;
         this.setState({

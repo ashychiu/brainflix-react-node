@@ -6,6 +6,7 @@ import Button from "../../components/Button/Button";
 import videopreview from "../../assets/images/Upload-video-preview.jpg";
 import "./UploadPage.scss";
 import axios from "axios";
+const API_URL = process.env.REACT_APP_API_URL;
 
 // Receiving props from browser
 const UploadPage = (props) => {
@@ -14,10 +15,11 @@ const UploadPage = (props) => {
     let title = e.target.title.value;
     let description = e.target.description.value;
     if (title && description) {
-      axios.post(`${process.env.REACT_APP_API_URL}/videos`, {
+      axios.post(`${API_URL}/videos`, {
         title: `${title}`,
         description: `${description}`,
       });
+      console.log(title, description);
       alert("Video uploaded sucessfully! \nClick OK to return to homepage.");
       window.location.href = "/"; // go back to homepage
     } else {
