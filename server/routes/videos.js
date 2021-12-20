@@ -12,7 +12,7 @@ const writeFile = (videoData) => {
   fs.writeFileSync("./data/videos.json", JSON.stringify(videoData, null, 2));
 };
 
-//Return only the needed keys for videosList
+//return only the needed keys for videosList
 videosRouter.get("/", (req, res) => {
   let videoData = readFile();
   videosList = videoData.map((video) => ({
@@ -24,7 +24,7 @@ videosRouter.get("/", (req, res) => {
   return res.status(200).json(videosList);
 });
 
-//Match the params.videoId with the data using .find()
+//match the params.videoId with the data using .find()
 videosRouter.get("/:videoId", (req, res) => {
   let videoData = readFile();
   const video = videoData.find((video) => video.id === req.params.videoId);
@@ -36,6 +36,7 @@ videosRouter.get("/:videoId", (req, res) => {
   return res.status(200).json(video);
 });
 
+//post request validation
 videosRouter.post("/", (req, res) => {
   if (!req.body.title || !req.body.description) {
     return res
